@@ -31,6 +31,14 @@ Si algo no se puede verificar, **no se dice**. Anota fuentes en `editorial.yaml 
 - `cd motor && npm run validar -- ../contenido/videos/<ID>` sin errores.
 
 ## 4. Voz (ElevenLabs, solo dentro del cupo)
+**Vía B — API (si no tienes las herramientas `mcp__ElevenLabs__*`):**
+`.venv/bin/python herramientas/elevenlabs.py contenido/videos/<ID> --estimar` y, si el cupo alcanza, sin `--estimar`.
+El script comprueba el cupo (reserva de 3.000) y guarda `audio/voz-original.mp3` y `audio/texto-locucion.txt`.
+La clave la inyecta el proxy desde el secreto del entorno; nunca la pidas por chat ni la escribas en archivos.
+**Si no hay conector ni la API responde** (sin clave): no uses otra voz. Deja editorial y guion validados, commitea,
+anota «falta voz» en `contenido/diario.md` y notifica al propietario cómo activarla (ver `docs/automatizacion.md`).
+
+**Vía A — conector de ElevenLabs (si tienes las herramientas `mcp__ElevenLabs__*`):**
 1. `account_get_usage`: restante = `character_limit − character_count`.
 2. Une los `voz` de los bloques con una línea en blanco. `creative_generate_speech` con `estimate_only: true`,
    voz `E1MLwoobU29hxksWgI7o`, modelo `eleven_multilingual_v2`, `generations_count: 1`.

@@ -22,6 +22,17 @@ Una tarea programada abre cada día una sesión nueva de Claude en la nube que s
   o un conector de terceros. Ninguna está implementada.
 - No gasta dinero: si se agota el cupo mensual de ElevenLabs, deja el guion listo y avisa.
 
+## Requisito pendiente: voz en la ejecución diaria
+La tarea programada no puede llevar el conector de ElevenLabs (la organización no permite adjuntar conectores
+a tareas creadas desde una sesión). Hay que activar **una** de estas dos vías; sin ellas, cada día se prepara y
+commitea el guion, pero no se genera vídeo:
+
+1. **Clave de API como secreto del entorno** (recomendada): en claude.ai → Claude Code → entorno «Rea» →
+   Network secrets → host `api.elevenlabs.io`, cabecera `xi-api-key`, valor = tu API key de ElevenLabs
+   (puede ser una clave restringida a Text to Speech + lectura de usuario). O pedir a Claude que muestre el formulario.
+2. **Recrear la tarea desde la web de rutinas de claude.ai** con el conector de ElevenLabs adjunto, usando el
+   mismo texto de la tarea «Reel diario · Contenido Inmobiliario».
+
 ## Cupo de voz
 ≈ 700 créditos por reel de 45 s → ≈ 21.000 al mes con un reel diario. El plan Creator da 122.038 al mes
 (se reinicia el día 2 de cada mes). Si el cupo se comparte con otros usos de la cuenta, puede agotarse antes:
