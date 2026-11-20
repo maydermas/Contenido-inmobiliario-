@@ -53,7 +53,7 @@ fuentes:
   - "Ley 29/1994, de Arrendamientos Urbanos, art. 36.1: fianza de dos mensualidades de renta en arrendamientos para uso distinto del de vivienda (BOE, consultado 20/11/2026). Pueden pactarse garantías adicionales."
   - "Punto de equilibrio = gastos fijos ÷ margen de contribución (definición contable estándar)."
 
-qc: "Ver salida de herramientas/qc.sh en el render final."
+qc: "1080×1920 · 30 fps · H.264 High · yuv420p · 8,3 Mbps · −16,7 LUFS · pico −3,5 dBTP · sin negros ni congelados (herramientas/qc.sh)."
 
 auditoria:
   puntuaciones:

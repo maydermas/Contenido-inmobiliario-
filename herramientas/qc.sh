@@ -18,6 +18,7 @@ else [[ "$w" == "1080" && "$h" == "1920" ]] && bien "Resolución 1080×1920" || 
 [[ "$pix" == "yuv420p" ]] && bien "yuv420p (compatible con redes)" || fallo "pix_fmt $pix"
 [[ -n "$a" ]] && bien "Pista de audio presente" || fallo "Sin audio"
 awk -v d="$dur" 'BEGIN{exit !(d>=10 && d<=90)}' && bien "Duración ${dur%.*} s" || fallo "Duración fuera de rango: $dur s"
+br=$(ffprobe -v error -show_entries format=bit_rate -of csv=p=0 "$f"); awk -v b="$br" 'BEGIN{exit !(b<=14000000)}' && bien "Bitrate $((br/1000)) kbps (≤ 14 Mbps)" || fallo "Bitrate $((br/1000)) kbps (> 14 Mbps)"
 
 loud=$(ffmpeg -hide_banner -nostats -i "$f" -af ebur128=peak=true -f null - 2>&1 | awk '/Integrated loudness/{f=1} f&&/I:/{print $2; exit}')
 peak=$(ffmpeg -hide_banner -nostats -i "$f" -af ebur128=peak=true -f null - 2>&1 | awk '/True peak/{f=1} f&&/Peak:/{print $2; exit}')

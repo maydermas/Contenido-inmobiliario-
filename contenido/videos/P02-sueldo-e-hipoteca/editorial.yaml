@@ -51,7 +51,7 @@ publicacion:
 fuentes:
   - "Banco de España, materiales de educación financiera sobre acceso a la hipoteca («las entidades suelen estimar que la carga de deudas no debería superar el 30–35 % de los ingresos»), bde.es, consultado 20/11/2026. Criterio habitual, no norma."
 
-qc: "Ver salida de herramientas/qc.sh en el render final."
+qc: "1080×1920 · 30 fps · H.264 High · yuv420p · 6,5 Mbps · −16,9 LUFS · pico −4,2 dBTP · sin negros ni congelados (herramientas/qc.sh)."
 
 auditoria:
   puntuaciones:
@@ -70,5 +70,5 @@ auditoria:
     - "Escenas tipográficas consecutivas (gancho, contraste) muy parecidas en fondo; podría alternarse con un plano 2.5D."
     - "Mezcla de audio verificada con medidas, pendiente de escucha humana."
   mejoras:
-    - "Corregido: el anillo ya no muestra «0 %» antes de nombrar la cifra."
+    - "Corregido: el anillo ya no muestra «0 %» antes de nombrar la cifra; las barras de la cuenta pasan a beige para leerse bien sobre verde."
     - "Propuesto para la siguiente versión: un plano 2.5D de nómina/recibos entre gancho y contraste para variar textura."

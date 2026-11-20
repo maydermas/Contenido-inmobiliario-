@@ -52,7 +52,7 @@ publicacion:
 fuentes:
   - "ITP Andalucía, tipo general 7 %: Ley 5/2021, de 20 de octubre, de Tributos Cedidos de la Comunidad Autónoma de Andalucía, art. 41 (consultado 20/11/2026; contrastar en BOJA antes de reutilizar)."
 
-qc: "1080×1920 · 30 fps · H.264 · yuv420p · −16,2 LUFS · pico −3,9 dBTP · sin negros ni congelados (herramientas/qc.sh)."
+qc: "1080×1920 · 30 fps · H.264 High · yuv420p · 7,2 Mbps · −16,3 LUFS · pico −3,8 dBTP · sin negros ni congelados (herramientas/qc.sh)."
 
 auditoria:
   puntuaciones:

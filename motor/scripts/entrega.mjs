@@ -34,12 +34,13 @@ md += `Estilo ${g.estilo} · pilar \`${g.pilar}\` · emoción \`${g.emocion}\` �
 md += `> Documento generado por \`motor/scripts/entrega.mjs\`. Fuente de verdad: \`guion.yaml\` y \`editorial.yaml\`.\n\n`;
 
 md += `## 1. Concepto\n\n| | |\n|---|---|\n`;
-for (const [k, v] of Object.entries(e.concepto)) md += `| **${k[0].toUpperCase() + k.slice(1)}** | ${v} |\n`;
+const ETQ = { tema: "Tema", publico: "Público", problema: "Problema", emocion: "Emoción principal", objetivo: "Objetivo" };
+for (const [k, v] of Object.entries(e.concepto)) md += `| **${ETQ[k] ?? k}** | ${v} |\n`;
 
 md += `\n## 2. Ganchos\n\nSe evaluaron ${e.ganchos.length} candidatos (7 criterios, máx. 35). Cinco mejores:\n\n| # | Gancho | Familia | Puntos |\n|---|---|---|---|\n`;
 const orden = e.ganchos.map((x, i) => ({ ...x, i, p: puntos(x) })).sort((a, b) => b.p - a.p);
 orden.slice(0, 5).forEach((x, n) => (md += `| ${n + 1} | ${x.i === e.elegido ? "**" : ""}«${x.texto}»${x.i === e.elegido ? "** ✔" : ""} | ${x.familia} | ${x.p}/35 |\n`));
-md += `\n**Elegido:** «${e.ganchos[e.elegido].texto}». ${e.motivo}\n`;
+md += `\n**Elegido:** «${e.ganchos[e.elegido].texto.replace(/\.$/, "")}». ${e.motivo}\n`;
 
 md += `\n## 3. Guion definitivo (tiempos reales de la locución)\n\n| Tiempo | Voz en off | Texto en pantalla | Énfasis |\n|---|---|---|---|\n`;
 g.bloques.forEach((b, i) => {

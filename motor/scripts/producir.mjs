@@ -110,8 +110,13 @@ fs.writeFileSync(regPath, JSON.stringify(registro, null, 2) + "\n");
 if (RENDER) {
   paso(6, "Renderizando");
   const salida = path.join(RAIZ, "salida", `${guion.id}${BORRADOR ? "-borrador" : ""}.mp4`);
+  const maestro = salida.replace(/\.mp4$/, "-maestro.mp4");
   fs.mkdirSync(path.dirname(salida), { recursive: true });
-  run("npx", ["remotion", "render", "src/index.ts", guion.id, salida, ...(BORRADOR ? ["--scale=0.5"] : [])], { cwd: MOTOR });
-  paso(7, "Control de calidad técnico");
+  run("npx", ["remotion", "render", "src/index.ts", guion.id, maestro, ...(BORRADOR ? ["--scale=0.5"] : [])], { cwd: MOTOR });
+  paso(7, "Codificación para redes (H.264 High, ≤ 12 Mbps, faststart)");
+  // El grano y el 3D por software disparan el bitrate del máster: se limita para publicar sin pérdida visible.
+  run("ffmpeg", ["-v", "error", "-y", "-i", maestro, "-c:v", "libx264", "-preset", "slow", "-crf", "20", "-maxrate", "12M", "-bufsize", "24M",
+    "-profile:v", "high", "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-c:a", "aac", "-b:a", "192k", salida]);
+  paso(8, "Control de calidad técnico");
   run("bash", ["herramientas/qc.sh", salida, ...(BORRADOR ? ["--borrador"] : [])]);
 }

@@ -39,7 +39,7 @@ Si solo se cambian escenas, textos en pantalla o tiempos, **no** hace falta.
 cd motor
 npm run producir -- ../contenido/videos/<ID>            # prepara datos (rápido)
 node scripts/fotogramas.mjs <ID>                          # hoja de contactos → salida/<ID>-contactos.jpg
-npm run producir -- ../contenido/videos/<ID> --render     # MP4 final + control de calidad (≈ 3 min)
+npm run producir -- ../contenido/videos/<ID> --render     # máster + MP4 para redes (≤ 12 Mbps) + control de calidad (≈ 3–4 min)
 npm run producir -- ../contenido/videos/<ID> --render --borrador   # MP4 a media resolución, más rápido
 ```
 `producir` hace: validación → post-proceso de voz (pausas, ritmo, −16 LUFS) → alineado palabra a palabra →
