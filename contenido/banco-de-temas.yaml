@@ -1,0 +1,46 @@
+# Banco de temas para la producción diaria automática.
+# La sesión diaria elige el primer tema `pendiente` que cumpla las reglas de rotación
+# (docs/automatizacion.md) y lo marca `producido` con su ID y fecha.
+# Se pueden añadir temas en cualquier momento; el sistema también añade temas nuevos
+# cuando quedan menos de 15 pendientes.
+temas:
+  - { id: T01, tema: "Qué revisar antes de entregar una señal (arras)", pilar: realidad-inmobiliaria, formato: lista-de-comprobacion, estilo: A, verificar: ["Tipos de arras (art. 1454 Código Civil) y arras penitenciales", "Nota simple del Registro: qué muestra y dónde se pide"], estado: pendiente }
+  - { id: T02, tema: "No confundas estar ocupado con estar progresando", pilar: crecimiento-personal, formato: reflexion-personal, estilo: B, verificar: [], estado: pendiente }
+  - { id: T03, tema: "Caso hipotético: vender tu vivienda por debajo de su valor por tener prisa", pilar: historias, formato: caso-hipotetico, estilo: A, verificar: ["Diferencia entre valoración de mercado y tasación oficial"], estado: pendiente }
+  - { id: T04, tema: "Mito: «alquilar es tirar el dinero»", pilar: dinero-y-decisiones, formato: mito-vs-realidad, estilo: C, verificar: ["Gastos asociados a la propiedad: IBI, comunidad, seguro, mantenimiento (solo conceptos)"], estado: pendiente }
+  - { id: T05, tema: "Un negocio puede facturar mucho y no ser rentable", pilar: negocios-y-oportunidades, formato: explicacion-visual, estilo: C, verificar: ["Diferencia entre facturación, margen y beneficio (concepto contable)"], estado: pendiente }
+  - { id: T06, tema: "Nunca confundas una oportunidad con una decisión urgente", pilar: errores-que-cuestan-dinero, formato: consejo-directo, estilo: B, verificar: [], estado: pendiente }
+  - { id: T07, tema: "Qué es la nota simple y por qué pedirla antes de comprar", pilar: realidad-inmobiliaria, formato: video-educativo, estilo: A, verificar: ["Qué información contiene la nota simple (Registradores de España)", "Coste orientativo oficial de la nota simple"], estado: pendiente }
+  - { id: T08, tema: "La tranquilidad también es una forma de riqueza", pilar: crecimiento-personal, formato: reflexion-personal, estilo: A, verificar: [], estado: pendiente }
+  - { id: T09, tema: "Cuánto ahorro necesitas antes de comprar: entrada + gastos (cómo calcularlo, sin cifras de mercado inventadas)", pilar: dinero-y-decisiones, formato: explicacion-visual, estilo: C, verificar: ["Porcentaje habitual que financian las entidades sobre el valor de tasación (Banco de España)", "ITP Andalucía vigente"], estado: pendiente }
+  - { id: T10, tema: "Caso hipotético: una familia que no contó con la derrama de la comunidad", pilar: historias, formato: caso-hipotetico, estilo: A, verificar: ["Quién paga las derramas aprobadas antes de la venta (Ley de Propiedad Horizontal, art. 9)"], estado: pendiente }
+  - { id: T11, tema: "Tres preguntas antes de visitar una vivienda", pilar: realidad-inmobiliaria, formato: lista-de-comprobacion, estilo: B, verificar: [], estado: pendiente }
+  - { id: T12, tema: "Qué es un traspaso y qué estudiar antes de pagarlo", pilar: negocios-y-oportunidades, formato: video-educativo, estilo: D, verificar: ["Cesión/traspaso de local en la LAU (art. 32)"], estado: pendiente }
+  - { id: T13, tema: "Diferencia entre poder pagar algo y poder permitírtelo", pilar: dinero-y-decisiones, formato: comparativa, estilo: B, verificar: [], estado: pendiente }
+  - { id: T14, tema: "El error de poner precio a tu casa sin estudiar el mercado", pilar: errores-que-cuestan-dinero, formato: error-frecuente, estilo: A, verificar: ["Diferencia entre precio de anuncio y precio de cierre (fuentes oficiales: Notariado, INE)"], estado: pendiente }
+  - { id: T15, tema: "No necesitas aparentar una vida que todavía estás construyendo", pilar: crecimiento-personal, formato: reflexion-personal, estilo: A, verificar: [], estado: pendiente }
+  - { id: T16, tema: "Comprar sobre plano: qué significa realmente y qué garantías existen", pilar: realidad-inmobiliaria, formato: video-educativo, estilo: D, verificar: ["Garantía de cantidades entregadas a cuenta (Ley de Ordenación de la Edificación, disposición adicional primera)"], estado: pendiente }
+  - { id: T17, tema: "Pregunta incómoda: ¿compras porque te conviene o por miedo a quedarte sin ella?", pilar: errores-que-cuestan-dinero, formato: pregunta-incomoda, estilo: B, verificar: [], estado: pendiente }
+  - { id: T18, tema: "Hipoteca fija o variable: qué cambia en tu cuota (conceptos)", pilar: dinero-y-decisiones, formato: comparativa, estilo: C, verificar: ["Qué es el Euríbor y cómo afecta a la cuota variable (Banco de España)"], estado: pendiente }
+  - { id: T19, tema: "Una buena ubicación no garantiza un buen negocio", pilar: negocios-y-oportunidades, formato: mito-vs-realidad, estilo: D, verificar: [], estado: pendiente }
+  - { id: T20, tema: "Caso hipotético: alguien rechaza una casa «perfecta» y descubre por qué acertó", pilar: historias, formato: caso-hipotetico, estilo: A, verificar: [], estado: pendiente }
+  - { id: T21, tema: "Antes de aceptar una tasación, entiende qué significa", pilar: errores-que-cuestan-dinero, formato: video-educativo, estilo: C, verificar: ["Qué es la tasación y quién la regula (Orden ECO/805/2003, Banco de España)"], estado: pendiente }
+  - { id: T22, tema: "Por qué una vivienda lleva meses sin venderse", pilar: realidad-inmobiliaria, formato: explicacion-visual, estilo: B, verificar: [], estado: pendiente }
+  - { id: T23, tema: "A veces avanzar significa dejar de tomar decisiones precipitadas", pilar: crecimiento-personal, formato: reflexion-personal, estilo: B, verificar: [], estado: pendiente }
+  - { id: T24, tema: "Qué son los gastos de hipoteca y quién paga cada uno hoy", pilar: dinero-y-decisiones, formato: video-educativo, estilo: C, verificar: ["Reparto de gastos de formalización (Ley 5/2019 de crédito inmobiliario, art. 14)"], estado: pendiente }
+  - { id: T25, tema: "Tres señales de que un local puede ser una oportunidad", pilar: negocios-y-oportunidades, formato: lista-de-comprobacion, estilo: D, verificar: [], estado: pendiente }
+  - { id: T26, tema: "Una casa barata puede terminar siendo carísima", pilar: errores-que-cuestan-dinero, formato: error-frecuente, estilo: A, verificar: ["Inspección técnica de edificios / certificado energético: qué informan (conceptos)"], estado: pendiente }
+  - { id: T27, tema: "Qué es el certificado energético y por qué importa al comprar o alquilar", pilar: realidad-inmobiliaria, formato: video-educativo, estilo: C, verificar: ["Real Decreto 390/2021 de certificación energética"], estado: pendiente }
+  - { id: T28, tema: "La disciplina que nadie ve", pilar: crecimiento-personal, formato: reflexion-personal, estilo: A, verificar: [], estado: pendiente }
+  - { id: T29, tema: "Por qué una cuota pequeña puede convertirse en un problema", pilar: dinero-y-decisiones, formato: explicacion-visual, estilo: C, verificar: [], estado: pendiente }
+  - { id: T30, tema: "Caso hipotético: un emprendedor alquila un local sin calcular la obra", pilar: historias, formato: caso-hipotetico, estilo: D, verificar: [], estado: pendiente }
+  - { id: T31, tema: "Qué preguntar antes de comprar un negocio en funcionamiento", pilar: negocios-y-oportunidades, formato: lista-de-comprobacion, estilo: B, verificar: [], estado: pendiente }
+  - { id: T32, tema: "Cuándo puede tener más sentido alquilar que comprar", pilar: realidad-inmobiliaria, formato: comparativa, estilo: C, verificar: [], estado: pendiente }
+  - { id: T33, tema: "No tomes una decisión financiera por miedo a perder una oferta", pilar: errores-que-cuestan-dinero, formato: consejo-directo, estilo: B, verificar: [], estado: pendiente }
+  - { id: T34, tema: "Aprende a decir que no a lo que no te conviene", pilar: crecimiento-personal, formato: reflexion-personal, estilo: A, verificar: [], estado: pendiente }
+  - { id: T35, tema: "Errores financieros que te acompañan durante años", pilar: dinero-y-decisiones, formato: lista-de-comprobacion, estilo: B, verificar: [], estado: pendiente }
+  - { id: T36, tema: "Cómo calcular si un alquiler comercial tiene sentido (alquiler / ventas)", pilar: negocios-y-oportunidades, formato: explicacion-visual, estilo: C, verificar: [], estado: pendiente }
+  - { id: T37, tema: "Qué es la plusvalía municipal y quién la paga al vender", pilar: realidad-inmobiliaria, formato: video-educativo, estilo: C, verificar: ["IIVTNU tras el RDL 26/2021: sujeto pasivo y métodos de cálculo"], estado: pendiente }
+  - { id: T38, tema: "No vendas sin conocer la situación real de mercado de tu vivienda", pilar: errores-que-cuestan-dinero, formato: consejo-directo, estilo: A, verificar: [], estado: pendiente }
+  - { id: T39, tema: "No estás obligado a tener la vida resuelta a los 25", pilar: crecimiento-personal, formato: reflexion-personal, estilo: B, verificar: [], estado: pendiente }
+  - { id: T40, tema: "Qué mira el banco además de tu sueldo (estabilidad, deudas, ahorro)", pilar: dinero-y-decisiones, formato: lista-de-comprobacion, estilo: C, verificar: ["Evaluación de solvencia (Ley 5/2019, art. 11; Banco de España)"], estado: pendiente }

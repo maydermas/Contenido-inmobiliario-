@@ -12,17 +12,6 @@
       "fecha": "2026-11-20"
     },
     {
-      "id": "P03-antes-de-alquilar-un-local",
-      "titulo": "Antes de alquilar un local, haz esta cuenta",
-      "gancho": "Antes de alquilar un local, haz esta cuenta.",
-      "pilar": "negocios-y-oportunidades",
-      "emocion": "curiosidad",
-      "formato": "caso-hipotetico",
-      "estilo": "D",
-      "cta": "escribir",
-      "fecha": "2026-11-20"
-    },
-    {
       "id": "P02-sueldo-e-hipoteca",
       "titulo": "Tener un sueldo no significa que puedas permitirte una hipoteca",
       "gancho": "Tener un sueldo no significa que puedas permitirte una hipoteca.",
@@ -31,6 +20,17 @@
       "formato": "explicacion-visual",
       "estilo": "C",
       "cta": "compartir",
+      "fecha": "2026-11-20"
+    },
+    {
+      "id": "P03-antes-de-alquilar-un-local",
+      "titulo": "Antes de alquilar un local, haz esta cuenta",
+      "gancho": "Antes de alquilar un local, haz esta cuenta.",
+      "pilar": "negocios-y-oportunidades",
+      "emocion": "curiosidad",
+      "formato": "caso-hipotetico",
+      "estilo": "D",
+      "cta": "escribir",
       "fecha": "2026-11-20"
     }
   ]

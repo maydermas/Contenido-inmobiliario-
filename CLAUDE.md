@@ -62,3 +62,7 @@ salida/                    MP4 renderizados (no se versiona)
 - Escenas nuevas: componente en `motor/src/escenas/`, registrar en `escenas/index.ts` y en `TIPOS` de `scripts/validar.mjs`, documentar en `docs/editorial/escenas.md`.
 - Nunca cambiar colores o fuentes fuera de `tokens.ts`. Recursos externos: registrar licencia en `docs/licencias.md`.
 - Commits en español, descriptivos.
+
+## Producción diaria automática
+Un reel al día mediante una tarea programada que sigue `.claude/skills/reel-diario/SKILL.md` (ver `docs/automatizacion.md`).
+Temas en `contenido/banco-de-temas.yaml`; registro en `contenido/diario.md`. Nunca publica en redes: entrega el MP4 y el texto.
