@@ -1,0 +1,105 @@
+# PILOTO 1 · Estilo A — Cinematic storytelling
+# El campo `voz` de cada bloque es EXACTAMENTE lo que dice la voz en off.
+# Si cambias una frase, hay que regenerar la voz (ver docs/flujo-de-trabajo.md).
+id: P01-casa-de-tus-suenos
+titulo: "La casa de tus sueños puede convertirse en tu peor decisión"
+estilo: A
+pilar: errores-que-cuestan-dinero
+emocion: precaucion
+formato: historia-cinematografica
+voz:
+  proveedor: elevenlabs
+  voice_id: E1MLwoobU29hxksWgI7o   # Raul Garcia (es-peninsular)
+  modelo: eleven_multilingual_v2
+musica:
+  tono: calido
+  bpm: 72
+bloques:
+  - id: gancho
+    voz: "La casa de tus sueños puede convertirse en tu peor decisión."
+    destacar: [sueños, peor, decisión]
+    escena:
+      tipo: CinematicIntro
+      props:
+        ilustracion: casa-atardecer
+        titular: ["La casa de tus sueños", "puede ser tu *peor decisión*"]
+        etiqueta: Imagen ilustrativa
+
+  - id: identificacion
+    voz: "Y no por la casa. Por todo lo que no calculaste antes de firmar."
+    destacar: [calculaste, firmar]
+    escena:
+      tipo: DocumentReveal
+      props:
+        documento: Contrato de compraventa
+        marca: firmar
+
+  - id: problema
+    voz: "Cuando te enamoras de una vivienda, miras el precio. Casi nadie mira lo que viene después."
+    destacar: [precio, después]
+    escena:
+      tipo: ParallaxScene
+      props:
+        ilustracion: casa-etiqueta-precio
+        revelarEn: después
+
+  - id: gastos-compra
+    voz: "Si compras una vivienda de segunda mano en Andalucía, el tipo general del impuesto de transmisiones es del siete por ciento. Y a eso súmale notaría, registro, gestoría y tasación."
+    destacar: [siete, por, ciento, notaría, registro, gestoría, tasación]
+    escena:
+      tipo: FinancialChart
+      props:
+        variante: pila
+        base: Precio de la vivienda
+        titulo: Lo que no sale en el anuncio
+        piezas:
+          - { texto: "ITP · 7 %*", en: ciento, destacada: true }
+          - { texto: Notaría, en: notaría }
+          - { texto: Registro, en: registro }
+          - { texto: Gestoría, en: gestoría }
+          - { texto: Tasación, en: tasación }
+        fuente: "*Tipo general en Andalucía para vivienda usada (Ley 5/2021). Existen tipos reducidos según el caso."
+
+  - id: gastos-recurrentes
+    voz: "Y después, los gastos que no se acaban. La cuota. La comunidad. El IBI. El seguro. Las reparaciones."
+    destacar: [no, se, acaban]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: recibo
+        titulo: Cada mes · cada año
+        lineas:
+          - { texto: Cuota de la hipoteca, en: cuota }
+          - { texto: Comunidad, en: comunidad }
+          - { texto: IBI, en: ibi }
+          - { texto: Seguro de hogar, en: seguro }
+          - { texto: Reparaciones, en: reparaciones }
+
+  - id: idea
+    voz: "Poder comprarla no es lo mismo que poder mantenerla tranquilo."
+    destacar: [comprarla, mantenerla, tranquilo]
+    escena:
+      tipo: ComparisonScene
+      props:
+        variante: balanza
+        izquierda: Poder comprarla
+        derecha: Poder mantenerla
+        inclinarHacia: derecha
+
+  - id: conclusion
+    voz: "Antes de enamorarte, haz la cuenta completa. Y si quieres, lo estudiamos juntos."
+    destacar: [cuenta, completa, juntos]
+    escena:
+      tipo: EmotionalEnding
+      props:
+        ilustracion: ventana-luz
+        frase: ["Antes de enamorarte,", "haz la *cuenta completa*."]
+
+  - id: cta
+    voz: "Guarda este vídeo. Puede servirte cuando llegue el momento."
+    destacar: [Guarda]
+    escena:
+      tipo: CTAEnding
+      props:
+        accion: guardar
+        texto: Guárdalo para cuando llegue el momento

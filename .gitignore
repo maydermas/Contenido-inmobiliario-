@@ -1,0 +1,12 @@
+node_modules/
+.venv/
+__pycache__/
+salida/
+# copias que genera scripts/producir.mjs (se regeneran)
+motor/public/videos/
+# música regenerable de forma determinista con herramientas/musica.py
+contenido/videos/*/audio/musica.wav
+.env
+*.log
+.DS_Store
+contenido/videos/*/guion.json

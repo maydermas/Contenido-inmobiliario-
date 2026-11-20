@@ -1,0 +1,112 @@
+# PILOTO 3 · Estilo D — Visual storytelling 3D
+id: P03-antes-de-alquilar-un-local
+titulo: "Antes de alquilar un local, haz esta cuenta"
+estilo: D
+pilar: negocios-y-oportunidades
+emocion: curiosidad
+formato: caso-hipotetico
+voz:
+  proveedor: elevenlabs
+  voice_id: E1MLwoobU29hxksWgI7o
+  modelo: eleven_multilingual_v2
+musica:
+  tono: urbano
+  bpm: 90
+bloques:
+  - id: gancho
+    voz: "Antes de alquilar un local, haz esta cuenta."
+    destacar: [local, cuenta]
+    escena:
+      tipo: ArchitectureScene
+      props:
+        modelo: local
+        camara: aproximacion
+        titular: ["Antes de alquilar un local,", "haz *esta cuenta*"]
+        etiqueta: Recreación 3D ilustrativa
+
+  - id: identificacion
+    voz: "Has encontrado el sitio perfecto. Buena calle, buen precio. Y ya te imaginas abriendo."
+    destacar: [perfecto, abriendo]
+    escena:
+      tipo: ArchitectureScene
+      props:
+        modelo: local
+        camara: interior
+        encenderEn: abriendo
+        cartel: SE ALQUILA
+
+  - id: gastos-fijos
+    voz: "Pero el alquiler es solo una parte. Suma la luz, el agua, los seguros, el personal y la gestoría."
+    destacar: [solo, una, parte]
+    escena:
+      tipo: ArchitectureScene
+      props:
+        modelo: local
+        camara: cenital
+        fichas:
+          - { texto: Alquiler, en: alquiler }
+          - { texto: Luz, en: luz }
+          - { texto: Agua, en: agua }
+          - { texto: Seguros, en: seguros }
+          - { texto: Personal, en: personal }
+          - { texto: Gestoría, en: gestoría }
+
+  - id: inversion-inicial
+    voz: "Y antes de abrir, la fianza, que en un local es de dos mensualidades por ley. Más la obra, el mobiliario y las licencias."
+    destacar: [fianza, dos, mensualidades]
+    escena:
+      tipo: DocumentReveal
+      props:
+        documento: Antes de abrir
+        lista:
+          - { texto: "Fianza legal · 2 mensualidades*", en: fianza, destacada: true }
+          - { texto: Obra y adecuación, en: obra }
+          - { texto: Mobiliario, en: mobiliario }
+          - { texto: Licencias, en: licencias }
+        fuente: "*Art. 36 LAU: fianza de dos mensualidades en arrendamientos de uso distinto de vivienda. Pueden pactarse garantías adicionales."
+
+  - id: pregunta
+    voz: "Ahora, la cuenta clave. ¿Cuánto tienes que vender cada mes solo para cubrir gastos? Eso es tu punto de equilibrio."
+    destacar: [punto, de, equilibrio]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: pregunta
+        lineas: ["¿Cuánto tienes que vender", "solo para *cubrir gastos*?"]
+        respuesta: Punto de equilibrio
+        en: equilibrio
+
+  - id: ejemplo
+    voz: "Un ejemplo hipotético. Tres mil euros de gastos fijos al mes, y de cada venta te queda la mitad. Necesitas facturar seis mil euros al mes antes de ganar un solo euro."
+    destacar: [seis, mil, euros]
+    escena:
+      tipo: AnimatedNumber
+      props:
+        variante: calculadora
+        etiqueta: Ejemplo hipotético
+        operacion:
+          - { texto: Gastos fijos / mes, valor: "3.000 €", en: tres }
+          - { texto: "Margen por venta", valor: "÷ 50 %", en: mitad }
+        resultado: { texto: Ventas necesarias / mes, valor: 6000, en: seis }
+        nota: Solo para empezar a ganar
+
+  - id: conclusion
+    voz: "Si esa cifra no te parece realista, el local no es una oportunidad. Es un riesgo."
+    destacar: [oportunidad, riesgo]
+    escena:
+      tipo: ComparisonScene
+      props:
+        variante: giro
+        izquierda: Oportunidad
+        derecha: Riesgo
+        cambiarEn: oportunidad
+
+  - id: cta
+    voz: "Escríbeme LOCAL, y lo estudiamos juntos."
+    destacar: [LOCAL, juntos]
+    escena:
+      tipo: CTAEnding
+      props:
+        accion: escribir
+        palabraClave: LOCAL
+        texto: y lo estudiamos juntos

@@ -1,0 +1,33 @@
+{
+  "name": "motor-contenido-inmobiliario",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "producir": "node scripts/producir.mjs",
+    "validar": "node scripts/validar.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.2.8",
+    "@fontsource/cormorant-garamond": "5.2.11",
+    "@react-three/fiber": "9.3.0",
+    "@remotion/bundler": "4.0.545",
+    "@remotion/cli": "4.0.545",
+    "@remotion/media-utils": "4.0.545",
+    "@remotion/renderer": "4.0.545",
+    "@remotion/three": "4.0.545",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.545",
+    "three": "0.180.0",
+    "yaml": "2.8.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "@types/three": "0.180.0",
+    "typescript": "5.9.2"
+  }
+}

@@ -1,0 +1,34 @@
+# Plantilla de guion. Copiar a contenido/videos/<ID>/guion.yaml
+# Catálogo de escenas y props: docs/editorial/escenas.md
+id: V0NN-tema-corto            # igual que el nombre de la carpeta
+titulo: ""
+estilo: A                      # A cinematic · B 2.5D · C motion graphics · D 3D
+pilar: realidad-inmobiliaria   # docs/editorial/pilares.md
+emocion: curiosidad
+formato: video-educativo
+voz:
+  proveedor: elevenlabs
+  voice_id: E1MLwoobU29hxksWgI7o   # Raul Garcia (es-peninsular)
+  modelo: eleven_multilingual_v2
+musica:
+  tono: calido                 # calido · sereno · urbano
+  bpm: 76
+bloques:
+  - id: gancho
+    voz: "Frase exacta que dirá la voz, con las cifras escritas en letras."
+    destacar: [palabra, clave]
+    escena:
+      tipo: CinematicIntro
+      props:
+        ilustracion: casa-atardecer
+        titular: ["Primera línea", "segunda con *énfasis*"]
+        etiqueta: Imagen ilustrativa
+
+  - id: cta
+    voz: "Guarda este vídeo para cuando lo necesites."
+    destacar: [Guarda]
+    escena:
+      tipo: CTAEnding
+      props:
+        accion: guardar          # guardar · compartir · escribir
+        texto: Guárdalo para cuando lo necesites

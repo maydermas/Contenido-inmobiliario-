@@ -1,0 +1,76 @@
+concepto:
+  tema: "Calcular el punto de equilibrio antes de alquilar un local comercial"
+  publico: "Personas que quieren emprender o abrir un negocio en Roquetas, Aguadulce o Almería"
+  problema: "Se decide por la ubicación y el alquiler, sin sumar gastos fijos, inversión inicial ni ventas necesarias"
+  emocion: "Curiosidad que termina en precaución"
+  objetivo: "Generar conversaciones cualificadas (palabra clave LOCAL) con emprendedores"
+
+ganchos:
+  - { texto: "Antes de alquilar un local, haz esta cuenta.", familia: E, atencion: 5, identificacion: 4, claridad: 5, curiosidad: 5, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "Un negocio puede facturar mucho y no ser rentable.", familia: D, atencion: 4, identificacion: 3, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 4 }
+  - { texto: "Esto es lo primero que estudiaría antes de alquilar un local.", familia: C, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 5, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "Una buena calle no garantiza un buen negocio.", familia: D, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 4 }
+  - { texto: "¿Sabes cuánto tienes que vender solo para no perder dinero?", familia: H, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 5, intensidad: 4, credibilidad: 5, relacion: 5 }
+  - { texto: "Si vas a abrir un negocio este año, escucha esto.", familia: B, atencion: 3, identificacion: 4, claridad: 4, curiosidad: 3, intensidad: 3, credibilidad: 5, relacion: 3 }
+  - { texto: "El alquiler es solo una parte de lo que te cuesta un local.", familia: C, atencion: 4, identificacion: 4, claridad: 5, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "No todas las oportunidades merecen ser aprovechadas.", familia: G, atencion: 3, identificacion: 3, claridad: 3, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 3 }
+  - { texto: "Este error cierra negocios en el primer año.", familia: A, atencion: 5, identificacion: 3, claridad: 4, curiosidad: 4, intensidad: 5, credibilidad: 2, relacion: 4 }
+  - { texto: "Antes de firmar el alquiler de un local, entiende este número.", familia: E, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+elegido: 0
+motivo: "Directo, promete una herramienta concreta (la cuenta) que el vídeo entrega. El gancho «cierra negocios en el primer año» se descartó: implica una estadística que no hemos verificado."
+
+storyboard:
+  gancho: { imagen: "Calle al atardecer: fachada de un local con escaparate, toldo verde y cartel «SE ALQUILA»; edificios vecinos con ventanas encendidas.", camara: "Aproximación 3D desde la acera de enfrente (z 26 → 14) con ligero desplazamiento lateral.", sonido: "Música urbana suave", objetivo: "Situar: el local perfecto." }
+  identificacion: { imagen: "Interior del local: mostrador, taburetes, estanterías, planta, lámparas colgantes que se encienden al decir «abriendo».", camara: "Entrada desde la calle a través del escaparate (dolly in).", sonido: "Pop suave al encender", objetivo: "Ilusión del emprendedor." }
+  gastos-fijos: { imagen: "Maqueta en corte del local vista desde arriba; fichas «Alquiler», «+ Luz», «+ Agua», «+ Seguros», «+ Personal», «+ Gestoría».", camara: "Órbita cenital lenta.", sonido: "Tick por ficha", objetivo: "El alquiler es solo una parte." }
+  inversion-inicial: { imagen: "Checklist «Antes de abrir» sobre la mesa: fianza legal (2 mensualidades), obra, mobiliario, licencias; nota del art. 36 LAU.", camara: "Acercamiento con giro leve.", sonido: "Papel + ticks", objetivo: "Inversión antes de facturar un euro." }
+  pregunta: { imagen: "Pregunta en grande y respuesta «Punto de equilibrio» en tarjeta clara.", camara: "Fija.", sonido: "Pop", objetivo: "Nombrar el concepto clave." }
+  ejemplo: { imagen: "Calculadora: gastos fijos 3.000 €, margen 50 %, resultado 6.000 € que cuenta hacia arriba.", camara: "Acercamiento lento.", sonido: "Ticks + pop en el resultado", objetivo: "Cuenta clara (ejemplo hipotético)." }
+  conclusion: { imagen: "Tarjeta «Oportunidad» que gira y se convierte en «Riesgo»; el fondo se oscurece.", camara: "Fija; giro 3D de la tarjeta.", sonido: "Whoosh", objetivo: "Giro final memorable." }
+  cta: { imagen: "Palabra clave LOCAL en tarjeta beige + «y lo estudiamos juntos»; firma de marca.", camara: "Fija.", sonido: "Pop suave", objetivo: "Conversación cualificada." }
+
+prompts:
+  nota: "Escena 3D procedural (Three.js) sin modelos generativos. Prompts preparados para una versión futura con vídeo generativo; sin personas identificables."
+  lista:
+    - { escena: gancho, tipo: "texto→vídeo (Wan 2.2)", prompt: "Cinematic vertical shot at dusk of an empty ground-floor retail space in a Spanish coastal town, large glass storefront, dark green awning, beige sign reading only a blank panel, warm street lights, slow dolly-in from across the street, no people, muted green and beige palette" }
+    - { escena: identificacion, tipo: "texto→vídeo", prompt: "Inside an empty small shop with light wood floor, a counter and wall shelves, pendant lamps switching on one by one, camera slowly moving in from the entrance, warm cinematic lighting, 9:16, no people" }
+
+publicacion:
+  portada: "Antes de alquilar un local, haz esta cuenta"
+  descripcion: |
+    El alquiler es solo una parte. Suma luz, agua, seguros, personal y gestoría. Y antes de abrir: la fianza (en un local, dos mensualidades por ley, art. 36 LAU), la obra, el mobiliario y las licencias.
+    La cuenta clave es tu punto de equilibrio: cuánto tienes que vender cada mes solo para cubrir gastos.
+    Ejemplo hipotético: 3.000 € de gastos fijos y un margen del 50 % → necesitas facturar 6.000 € al mes antes de ganar un euro.
+    Si esa cifra no es realista, el local no es una oportunidad: es un riesgo.
+    ¿Estás valorando un local? Escríbeme LOCAL y lo estudiamos juntos.
+  cta: "Escríbeme LOCAL y lo estudiamos juntos."
+  hashtags: ["#emprender", "#localcomercial", "#negocio", "#puntodeequilibrio", "#emprendedores", "#Almería", "#RoquetasDeMar", "#Aguadulce"]
+  tiktok: "Texto en portada: «¿Cuánto tienes que vender para no perder dinero?». Respuesta automática o manual a quien comente LOCAL."
+  instagram: "Reel + respuesta por mensaje directo a la palabra LOCAL (preparar respuesta tipo honesta: qué datos necesitamos para estudiarlo). Ubicación: Roquetas de Mar."
+  youtube: "Título: «Antes de alquilar un local, calcula tu punto de equilibrio». #Shorts. Fórmula en la descripción."
+
+fuentes:
+  - "Ley 29/1994, de Arrendamientos Urbanos, art. 36.1: fianza de dos mensualidades de renta en arrendamientos para uso distinto del de vivienda (BOE, consultado 20/11/2026). Pueden pactarse garantías adicionales."
+  - "Punto de equilibrio = gastos fijos ÷ margen de contribución (definición contable estándar)."
+
+qc: "Ver salida de herramientas/qc.sh en el render final."
+
+auditoria:
+  puntuaciones:
+    Gancho: 9
+    Identificación: 8
+    Utilidad: 10
+    Claridad: 9
+    Emoción: 8
+    Retención: 9
+    Credibilidad: 10
+    Narrativa: 9
+    Calidad visual: 8
+    Conversión: 9
+  problemas:
+    - "El 3D procedural se renderiza por software: correcto y bien iluminado, pero sencillo (sin texturas ni reflejos realistas)."
+    - "En el plano exterior las ventanas de los pisos superiores son planas; podrían tener carpintería."
+    - "Mezcla de audio verificada con medidas, pendiente de escucha humana."
+  mejoras:
+    - "Corregido: el titular ya no tapa el cartel; cámara interior más abierta; tarjeta «Oportunidad → Riesgo» gira a tiempo y sin verse al revés; la nota legal ya no pisa el documento."
+    - "Propuesto: texturas propias (madera, baldosa) generadas por código para el 3D."

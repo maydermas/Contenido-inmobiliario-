@@ -1,0 +1,58 @@
+# Semana 48 (23–29 nov 2026) — propuesta. Pendiente de aprobación del propietario.
+# Publicados/listos: P01 (errores · precaución · A), P02 (dinero · reflexión · C), P03 (negocios · curiosidad · D).
+# Regla: no repetir pilar seguido, emoción alterna, estilos A–D alternos, ≥ 2 CTA no comerciales.
+semana: 2026-W48
+piezas:
+  - dia: lunes
+    id: P01-casa-de-tus-suenos
+    estado: listo
+  - dia: martes
+    id: P02-sueldo-e-hipoteca
+    estado: listo
+  - dia: miércoles
+    id: V004-senal-antes-de-firmar
+    tema: "Qué revisar antes de entregar una señal (arras)"
+    pilar: realidad-inmobiliaria
+    emocion: confianza
+    formato: lista-de-comprobacion
+    estilo: A
+    gancho: "Antes de entregar una señal, dedica un minuto a esto."
+    familia: E
+    cta: guardar
+    verificar: ["Tipos de arras en el Código Civil (art. 1454) y práctica habitual", "Nota simple del Registro de la Propiedad: qué muestra y dónde se pide"]
+  - dia: jueves
+    id: P03-antes-de-alquilar-un-local
+    estado: listo
+  - dia: viernes
+    id: V005-ocupado-no-es-progresar
+    tema: "No confundas estar ocupado con estar progresando"
+    pilar: crecimiento-personal
+    emocion: reflexion
+    formato: reflexion-personal
+    estilo: B
+    gancho: "No confundas estar ocupado con estar progresando."
+    familia: D
+    cta: comentar
+    verificar: []
+  - dia: sábado
+    id: V006-vender-con-prisa
+    tema: "Caso hipotético: vender tu vivienda por debajo de su valor por tener prisa"
+    pilar: historias
+    emocion: sorpresa
+    formato: caso-hipotetico
+    estilo: A
+    gancho: "Hay decisiones que parecen buenas hasta que empiezas a pagarlas."
+    familia: B
+    cta: "escribir VALORACIÓN"
+    verificar: ["Qué incluye una valoración de mercado frente a una tasación oficial"]
+  - dia: domingo
+    id: V007-alquilar-o-comprar
+    tema: "Mito frente a realidad: «alquilar es tirar el dinero»"
+    pilar: dinero-y-decisiones
+    emocion: alivio
+    formato: mito-vs-realidad
+    estilo: C
+    gancho: "«Alquilar es tirar el dinero». No siempre."
+    familia: D
+    cta: compartir
+    verificar: ["Costes asociados a la propiedad (IBI, comunidad, seguro, mantenimiento) frente a alquiler: solo conceptos, sin cifras de mercado no verificadas"]

@@ -1,0 +1,51 @@
+# Plantilla editorial. Copiar a contenido/videos/<ID>/editorial.yaml
+# `node motor/scripts/entrega.mjs contenido/videos/<ID>` genera ENTREGA.md a partir de aquí.
+concepto:
+  tema: ""
+  publico: ""
+  problema: ""
+  emocion: ""
+  objetivo: ""
+
+# 10 candidatos, ≥ 4 familias (A–H), notas 1–5 (docs/editorial/ganchos.md)
+ganchos:
+  - { texto: "", familia: A, atencion: 0, identificacion: 0, claridad: 0, curiosidad: 0, intensidad: 0, credibilidad: 0, relacion: 0 }
+elegido: 0
+motivo: ""
+
+# una entrada por id de bloque del guion
+storyboard:
+  gancho: { imagen: "", camara: "", sonido: "", objetivo: "" }
+
+prompts:
+  nota: "Escenas hechas por código. Prompts opcionales para modelos generativos con licencia compatible."
+  lista: []
+
+publicacion:
+  portada: ""
+  descripcion: |
+
+  cta: ""
+  hashtags: []
+  tiktok: ""
+  instagram: ""
+  youtube: ""
+
+fuentes: []   # "Organismo, norma o documento, URL, fecha de consulta"
+
+qc: ""
+
+auditoria:      # 10 criterios × 10. < 85 → rehacer. Sin inflar.
+  puntuaciones:
+    Gancho: 0
+    Identificación: 0
+    Utilidad: 0
+    Claridad: 0
+    Emoción: 0
+    Retención: 0
+    Credibilidad: 0
+    Narrativa: 0
+    Calidad visual: 0
+    Conversión: 0
+  problemas: []
+  mejoras: []

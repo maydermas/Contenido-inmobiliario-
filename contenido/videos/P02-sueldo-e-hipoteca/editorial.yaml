@@ -1,0 +1,74 @@
+concepto:
+  tema: "Tener ingresos no equivale a poder asumir una hipoteca: lo que cuenta es lo que te queda"
+  publico: "Personas con sueldo estable (25–40 años) que pagan alquiler y piensan en comprar"
+  problema: "Comparan alquiler con cuota y olvidan las deudas existentes, la entrada y los gastos de compra"
+  emocion: "Reflexión"
+  objetivo: "Que la persona entienda el criterio de endeudamiento y comparta el vídeo con quien esté pensando en comprar"
+
+ganchos:
+  - { texto: "Tener un sueldo no significa que puedas permitirte una hipoteca.", familia: D, atencion: 5, identificacion: 5, claridad: 5, curiosidad: 4, intensidad: 4, credibilidad: 5, relacion: 5 }
+  - { texto: "Si pagas un alquiler, ¿puedes pagar una hipoteca? No siempre.", familia: H, atencion: 4, identificacion: 5, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "El banco no mira lo que ganas. Mira lo que te queda.", familia: C, atencion: 5, identificacion: 4, claridad: 4, curiosidad: 5, intensidad: 3, credibilidad: 4, relacion: 5 }
+  - { texto: "Hay una diferencia entre poder pagar algo y poder permitírtelo.", familia: C, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 4 }
+  - { texto: "¿Comprarías una casa si supieras que vas a vivir justo todos los meses?", familia: H, atencion: 4, identificacion: 5, claridad: 4, curiosidad: 3, intensidad: 4, credibilidad: 5, relacion: 4 }
+  - { texto: "Antes de pedir una hipoteca, haz esta cuenta con tu nómina.", familia: E, atencion: 4, identificacion: 4, claridad: 5, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "Si trabajas todos los meses y aun así no consigues ahorrar, esto te interesa.", familia: B, atencion: 4, identificacion: 5, claridad: 4, curiosidad: 3, intensidad: 3, credibilidad: 5, relacion: 3 }
+  - { texto: "Tener una hipoteca aprobada no significa que debas aceptarla.", familia: D, atencion: 4, identificacion: 3, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 3 }
+  - { texto: "No necesitas ganar más para decidir mejor.", familia: F, atencion: 3, identificacion: 4, claridad: 4, curiosidad: 3, intensidad: 2, credibilidad: 5, relacion: 3 }
+  - { texto: "Ese coche que pagas a plazos puede ser el motivo de que no te den la hipoteca.", familia: A, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 4, credibilidad: 3, relacion: 4 }
+elegido: 0
+motivo: "Frase-título pedida en la directiva, contradice una creencia común y es 100 % sostenible. El gancho del coche se descartó: sugiere una causa única de denegación que no podemos afirmar."
+
+storyboard:
+  gancho: { imagen: "Titular tipográfico en 4 líneas con «sueldo» y «permitirte» en serif bronce; línea bronce que se dibuja.", camara: "Escala lenta 1 → 1,06.", sonido: "Música serena", objetivo: "Contradicción clara." }
+  identificacion: { imagen: "Dos tarjetas «Alquiler = Cuota» (cada mes); el «=» se tacha y aparece «No es lo mismo».", camara: "Fija, tarjetas entran desde abajo.", sonido: "Tick al tachar", objetivo: "Reflejar el pensamiento del espectador." }
+  problema: { imagen: "«Lo que ganas» se tacha y aparece grande «Lo que te queda».", camara: "Fija.", sonido: "Whoosh suave", objetivo: "Cambio de perspectiva." }
+  referencia: { imagen: "Anillo que se llena hasta 30 % y se amplía a 35 %; nota de fuente.", camara: "Escala 0,96 → 1,03.", sonido: "Pop", objetivo: "Dar el criterio con su matiz (no es ley)." }
+  ejemplo: { imagen: "Cascada de barras con importes: 2.000 € → 700 € → −300 € → 400 € destacado.", camara: "Fija; las barras crecen con la voz.", sonido: "Tick + pop en el resultado", objetivo: "Hacer la cuenta visible (ejemplo hipotético)." }
+  ahorros: { imagen: "Depósito «Ahorros» que baja al restar «Entrada» y «Gastos de compra».", camara: "Fija.", sonido: "Tick", objetivo: "Recordar el ahorro previo." }
+  conclusion: { imagen: "Llave dorada flotando con halo cálido; frase en serif.", camara: "Dolly in lento.", sonido: "Música abriéndose", objetivo: "Idea memorable: pagar ≠ permitirse." }
+  cta: { imagen: "Icono de compartir + texto; firma de marca.", camara: "Fija.", sonido: "Pop suave", objetivo: "Compartir con alguien que esté pensando en comprar." }
+
+prompts:
+  nota: "Pieza 100 % motion graphics por código; no requiere modelos generativos. Prompt opcional para un plano de recurso futuro."
+  lista:
+    - { escena: conclusion, tipo: "texto→vídeo (Wan 2.2)", prompt: "Macro shot of brass house keys slowly rotating on a dark green velvet surface, warm rim light, shallow depth of field, elegant, 9:16, no people, no text" }
+
+publicacion:
+  portada: "Tener un sueldo no significa poder permitirte una hipoteca"
+  descripcion: |
+    Pagar un alquiler no significa que puedas asumir una cuota. El banco no mira solo lo que ganas: mira lo que te queda.
+    Como referencia orientativa, las entidades suelen considerar que el total de tus deudas no supere el 30–35 % de tus ingresos netos. No es un límite legal y cada entidad aplica sus criterios.
+    Ejemplo hipotético: 2.000 € netos → 700 € (35 %) → si ya pagas 300 € de un coche, quedan 400 €.
+    Y la entrada y los gastos de compra suelen salir de tus ahorros.
+    Información general. Para tu caso concreto, consulta con un profesional habilitado.
+  cta: "Compártelo con alguien que esté pensando en comprar."
+  hashtags: ["#hipoteca", "#comprarcasa", "#finanzaspersonales", "#educaciónfinanciera", "#ahorro", "#primeravivienda", "#Almería", "#vivienda"]
+  tiktok: "Texto en portada: «¿Tu sueldo te da para una hipoteca?». Pregunta en descripción: «¿Lo habías calculado así?». 4–5 hashtags."
+  instagram: "Reel + carrusel opcional con la cuenta paso a paso (mismos colores). Comentario fijado con el matiz «no es un límite legal»."
+  youtube: "Título: «¿Tu sueldo te da para una hipoteca? La cuenta que hace el banco». #Shorts. Fuente en descripción."
+
+fuentes:
+  - "Banco de España, materiales de educación financiera sobre acceso a la hipoteca («las entidades suelen estimar que la carga de deudas no debería superar el 30–35 % de los ingresos»), bde.es, consultado 20/11/2026. Criterio habitual, no norma."
+
+qc: "Ver salida de herramientas/qc.sh en el render final."
+
+auditoria:
+  puntuaciones:
+    Gancho: 9
+    Identificación: 9
+    Utilidad: 9
+    Claridad: 9
+    Emoción: 7
+    Retención: 8
+    Credibilidad: 10
+    Narrativa: 8
+    Calidad visual: 8
+    Conversión: 9
+  problemas:
+    - "Emoción algo contenida: es la pieza más racional de las tres (coherente con el estilo C, pero menos memorable)."
+    - "Escenas tipográficas consecutivas (gancho, contraste) muy parecidas en fondo; podría alternarse con un plano 2.5D."
+    - "Mezcla de audio verificada con medidas, pendiente de escucha humana."
+  mejoras:
+    - "Corregido: el anillo ya no muestra «0 %» antes de nombrar la cifra."
+    - "Propuesto para la siguiente versión: un plano 2.5D de nómina/recibos entre gancho y contraste para variar textura."

@@ -1,0 +1,105 @@
+# PILOTO 2 · Estilo C + B — Premium motion graphics 2.5D
+id: P02-sueldo-e-hipoteca
+titulo: "Tener un sueldo no significa que puedas permitirte una hipoteca"
+estilo: C
+pilar: dinero-y-decisiones
+emocion: reflexion
+formato: explicacion-visual
+voz:
+  proveedor: elevenlabs
+  voice_id: E1MLwoobU29hxksWgI7o
+  modelo: eleven_multilingual_v2
+musica:
+  tono: sereno
+  bpm: 84
+bloques:
+  - id: gancho
+    voz: "Tener un sueldo no significa que puedas permitirte una hipoteca."
+    destacar: [sueldo, permitirte, hipoteca]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: titular
+        lineas: ["Tener un *sueldo*", "no significa", "poder *permitirte*", "una hipoteca"]
+
+  - id: identificacion
+    voz: "Lo sé. Trabajas, cobras cada mes, y piensas: si puedo pagar un alquiler, podré pagar una cuota."
+    destacar: [alquiler, cuota]
+    escena:
+      tipo: ComparisonScene
+      props:
+        variante: tarjetas
+        izquierda: Alquiler
+        derecha: Cuota
+        signo: "="
+        tacharEn: cuota
+
+  - id: problema
+    voz: "Pero el banco no mira solo lo que ganas. Mira lo que te queda."
+    destacar: [ganas, queda]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: contraste
+        lineas: ["Lo que *ganas*", "Lo que te *queda*"]
+        cambiarEn: queda
+
+  - id: referencia
+    voz: "Como referencia, las entidades suelen considerar que el total de tus deudas no debería pasar del treinta o treinta y cinco por ciento de tus ingresos."
+    destacar: [treinta, cinco, por, ciento]
+    escena:
+      tipo: FinancialChart
+      props:
+        variante: anillo
+        desde: 30
+        hasta: 35
+        etiqueta: de tus ingresos netos
+        titulo: Referencia orientativa de endeudamiento
+        en: treinta
+        fuente: "Criterio habitual de las entidades (Banco de España, guías de acceso a la hipoteca). No es un límite legal."
+
+  - id: ejemplo
+    voz: "Pongamos un ejemplo. Dos mil euros netos al mes. El treinta y cinco por ciento son setecientos. Pero si ya pagas trescientos de un coche, para la hipoteca te quedan cuatrocientos."
+    destacar: [setecientos, trescientos, cuatrocientos]
+    escena:
+      tipo: FinancialChart
+      props:
+        variante: barras
+        titulo: Ejemplo hipotético
+        filas:
+          - { texto: Ingresos netos, valor: 2000, en: dos }
+          - { texto: "Límite orientativo (35 %)", valor: 700, en: setecientos }
+          - { texto: Préstamo del coche, valor: -300, en: trescientos }
+          - { texto: Margen para la hipoteca, valor: 400, en: cuatrocientos, destacada: true }
+        etiqueta: Ejemplo hipotético
+
+  - id: ahorros
+    voz: "Y la entrada y los gastos de la compra suelen salir de tus ahorros."
+    destacar: [ahorros]
+    escena:
+      tipo: AnimatedNumber
+      props:
+        variante: hucha
+        titulo: Antes de la primera cuota
+        lineas:
+          - { texto: Entrada, en: entrada }
+          - { texto: Gastos de compra, en: gastos }
+        conclusion: Salen de tus ahorros
+
+  - id: conclusion
+    voz: "La pregunta no es si puedes pagarla. Es si puedes permitírtela sin vivir justo cada mes."
+    destacar: [pagarla, permitírtela, justo]
+    escena:
+      tipo: EmotionalEnding
+      props:
+        ilustracion: llaves
+        frase: ["No es si puedes *pagarla*.", "Es si puedes *permitírtela*."]
+
+  - id: cta
+    voz: "Compártelo con alguien que esté pensando en comprar."
+    destacar: [Compártelo]
+    escena:
+      tipo: CTAEnding
+      props:
+        accion: compartir
+        texto: Compártelo con quien esté pensando en comprar

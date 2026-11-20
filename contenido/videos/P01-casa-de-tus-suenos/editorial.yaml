@@ -1,0 +1,77 @@
+concepto:
+  tema: "La diferencia entre poder comprar una vivienda y poder mantenerla con tranquilidad"
+  publico: "Personas de 28–45 años en Almería y alrededores que buscan su primera vivienda o cambiar de casa"
+  problema: "Se decide por el precio y por emoción, sin sumar impuestos, gastos de compra ni gastos recurrentes"
+  emocion: "Precaución que termina en alivio («hay una forma de hacerlo bien: la cuenta completa»)"
+  objetivo: "Que la persona guarde el vídeo y asocie la marca con estudiar antes de firmar"
+
+ganchos:
+  - { texto: "La casa de tus sueños puede convertirse en tu peor decisión.", familia: D, atencion: 5, identificacion: 5, claridad: 5, curiosidad: 5, intensidad: 4, credibilidad: 4, relacion: 5 }
+  - { texto: "Antes de enamorarte de una casa, haz esta cuenta.", familia: E, atencion: 4, identificacion: 4, claridad: 5, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "El precio de una casa no es lo que te va a costar.", familia: C, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 5, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "¿Sabes cuánto te cuesta realmente mantener una vivienda?", familia: H, atencion: 4, identificacion: 4, claridad: 5, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 4 }
+  - { texto: "Hay decisiones que parecen buenas hasta que empiezas a pagarlas.", familia: B, atencion: 4, identificacion: 5, claridad: 4, curiosidad: 4, intensidad: 4, credibilidad: 5, relacion: 4 }
+  - { texto: "Este error puede costarte miles de euros al comprar casa.", familia: A, atencion: 4, identificacion: 3, claridad: 4, curiosidad: 4, intensidad: 4, credibilidad: 3, relacion: 4 }
+  - { texto: "No siempre es buena idea comprar la casa que puedes permitirte.", familia: D, atencion: 4, identificacion: 4, claridad: 3, curiosidad: 4, intensidad: 3, credibilidad: 4, relacion: 4 }
+  - { texto: "Tu primera vivienda no tiene que ser perfecta. Tiene que tener sentido.", familia: F, atencion: 3, identificacion: 4, claridad: 5, curiosidad: 3, intensidad: 3, credibilidad: 5, relacion: 3 }
+  - { texto: "Voy a explicarte por qué quizá no deberías comprar esa casa.", familia: G, atencion: 4, identificacion: 3, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 4, relacion: 4 }
+  - { texto: "Si te has enamorado de una casa, escucha esto antes de firmar.", familia: B, atencion: 4, identificacion: 4, claridad: 5, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+elegido: 0
+motivo: "Contradicción entre «sueño» y «peor decisión»: detiene el scroll sin inventar nada, y el vídeo cumple la promesa explicando el porqué (gastos ocultos). Se descartó el gancho de «miles de euros» por credibilidad: no se cuantifica en el vídeo."
+
+storyboard:
+  gancho: { imagen: "Vivienda mediterránea moderna al atardecer, palmeras y agaves en primer plano, mar al fondo. Titular arriba.", camara: "Dolly in lento (escala 1,00 → 1,12) con parallax de 4 capas; las ventanas se encienden.", sonido: "Música cálida entrando, voz", objetivo: "Aspiración: la casa soñada." }
+  identificacion: { imagen: "Contrato de compraventa sobre mesa de madera, pluma y llaves.", camara: "Ligero giro y acercamiento desde arriba; la pluma se acerca a la firma y aparece «¿Lo has calculado todo?».", sonido: "Papel", objetivo: "Tensión: el momento de firmar." }
+  problema: { imagen: "La casa con una etiqueta «PRECIO» colgando; la cámara baja bajo tierra y revela «Lo que viene después».", camara: "Desplazamiento vertical (metáfora del iceberg).", sonido: "Whoosh suave", objetivo: "Revelar lo invisible." }
+  gastos-compra: { imagen: "Bloque «Precio de la vivienda» y encima, al nombrarse, ITP 7 %, notaría, registro, gestoría y tasación.", camara: "Ligero alejamiento para ver la pila crecer.", sonido: "Tick por cada pieza", objetivo: "Dato verificable y concreto." }
+  gastos-recurrentes: { imagen: "Ticket que se imprime: cuota, comunidad, IBI, seguro, reparaciones.", camara: "Subida suave siguiendo el ticket.", sonido: "Tick por línea", objetivo: "Los gastos que no se acaban." }
+  idea: { imagen: "Balanza: «Poder comprarla» frente a «Poder mantenerla», que pesa más.", camara: "Fija; se mueve la balanza.", sonido: "Música", objetivo: "La idea central en una imagen." }
+  conclusion: { imagen: "Ventana con luz cálida entrando y polvo en suspensión; frase en serif.", camara: "Dolly in muy lento.", sonido: "Música abriéndose", objetivo: "Alivio: hay una forma de hacerlo bien." }
+  cta: { imagen: "Icono de guardar que se dibuja + texto; al acabar la voz, firma de marca y lema.", camara: "Fija.", sonido: "Pop suave en la firma", objetivo: "Guardar + recordar la marca." }
+
+prompts:
+  nota: "No se usaron modelos generativos (sin GPU y con presupuesto cero): todas las escenas están hechas con código. Prompts preparados para una futura versión con Wan 2.2 (Apache-2.0) si se dispone de GPU gratuita. Sin personas identificables."
+  lista:
+    - { escena: gancho, tipo: "imagen→vídeo (Wan 2.2 TI2V)", prompt: "Cinematic vertical 9:16 shot of a modern Mediterranean white house with wooden slats and large glass windows at golden hour, Almería coast, palm trees silhouettes in foreground, warm interior lights turning on, slow dolly-in, shallow depth of field, soft film grain, muted dark green and beige palette, no people, no text" }
+    - { escena: identificacion, tipo: "texto→vídeo", prompt: "Top-down slow push-in on a property purchase contract on a warm wooden desk, a black fountain pen approaching the signature line, brass house keys beside it, soft window light, documentary look, dark green and bronze accents, no hands visible, no readable text" }
+    - { escena: conclusion, tipo: "texto→vídeo", prompt: "Warm sunlight entering through a large window into a calm dark-green room, dust particles floating in the light beam, very slow dolly-in, peaceful, cinematic, 9:16, no people" }
+
+publicacion:
+  portada: "La casa de tus sueños puede ser tu peor decisión"
+  descripcion: |
+    Enamorarse de una casa es fácil. Lo difícil es todo lo que viene después de firmar.
+    En Andalucía, al comprar vivienda de segunda mano, el tipo general del ITP es del 7 % (hay tipos reducidos en algunos casos), y a eso se suman notaría, registro, gestoría y tasación. Luego llegan la cuota, la comunidad, el IBI, el seguro y el mantenimiento.
+    Antes de decidir, haz la cuenta completa. Y si quieres, lo estudiamos juntos.
+    Imágenes ilustrativas. Información general, no asesoramiento fiscal personalizado.
+  cta: "Guarda este vídeo para cuando llegue el momento."
+  hashtags: ["#comprarvivienda", "#primeravivienda", "#gastosdecompra", "#ITP", "#Almería", "#RoquetasDeMar", "#Aguadulce", "#educaciónfinanciera", "#vivienda"]
+  tiktok: "Portada con el titular. Texto: «¿Habías sumado todo esto?» para invitar a comentar. 4–5 hashtags (#comprarcasa #primeravivienda #finanzaspersonales #Almería). Subir el SRT como subtítulos automáticos desactivados."
+  instagram: "Reel con portada personalizada (fotograma 1). Descripción completa con el matiz del ITP. Fijar comentario: «¿Qué gasto te sorprendió más?». Etiquetar ubicación Roquetas de Mar."
+  youtube: "Título: «La casa de tus sueños puede ser tu peor decisión (haz esta cuenta)». Descripción breve + fuente (Ley 5/2021 de Andalucía). #Shorts."
+
+fuentes:
+  - "ITP Andalucía, tipo general 7 %: Ley 5/2021, de 20 de octubre, de Tributos Cedidos de la Comunidad Autónoma de Andalucía, art. 41 (consultado 20/11/2026; contrastar en BOJA antes de reutilizar)."
+
+qc: "1080×1920 · 30 fps · H.264 · yuv420p · −16,2 LUFS · pico −3,9 dBTP · sin negros ni congelados (herramientas/qc.sh)."
+
+auditoria:
+  puntuaciones:
+    Gancho: 9
+    Identificación: 9
+    Utilidad: 9
+    Claridad: 9
+    Emoción: 8
+    Retención: 8
+    Credibilidad: 10
+    Narrativa: 9
+    Calidad visual: 8
+    Conversión: 8
+  problemas:
+    - "Estética ilustrada (SVG 2.5D), no fotorrealista: elegante y coherente, pero por debajo de una pieza con vídeo cinematográfico real."
+    - "El titular del gancho y el subtítulo repiten las mismas palabras durante 3 s."
+    - "La mezcla de música y voz se ha verificado con medidas (sonoridad, picos) pero no a oído: falta escucha humana."
+    - "Escena de gastos recurrentes: el ticket queda vacío un instante antes de que se nombre la cuota."
+  mejoras:
+    - "Corregido antes del render final: la voz ya no dice que IBI y seguro se pagan «cada mes» (texto en pantalla: «Cada mes · cada año»)."
+    - "Corregido: subtítulos que no terminan en palabra de enlace; CTA con firma de marca al acabar la voz."
+    - "Propuesto: con GPU gratuita, sustituir el plano del gancho por un clip Wan 2.2 con el prompt preparado."
