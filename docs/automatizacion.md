@@ -3,7 +3,7 @@
 **Plan del propietario:** 1 reel al día, todos los días. El sistema elige el tema y lo produce solo.
 
 ## Cómo funciona
-Una tarea programada abre cada día una sesión nueva de Claude en la nube que sigue la skill
+Una tarea programada despierta cada día la sesión de Claude del proyecto, que sigue la skill
 `.claude/skills/reel-diario/SKILL.md`:
 
 1. Prepara el entorno (`herramientas/preparar-entorno.sh`).
@@ -16,22 +16,18 @@ Una tarea programada abre cada día una sesión nueva de Claude en la nube que s
 8. Commit + push en `main`, registro en `contenido/diario.md` y envío del MP4 con el texto de publicación.
 
 ## Lo que NO hace (y por qué)
-- **No publica en Instagram, TikTok ni YouTube.** No hay ninguna integración de publicación conectada, y publicar en
-  nombre de la marca es una acción pública que debe autorizarse expresamente. Opciones futuras: Instagram Graph API
+- **No publica en Instagram, TikTok ni YouTube.** Composio tiene Instagram y YouTube conectados, pero publicar en
+  nombre de la marca es una acción pública que el propietario debe autorizar expresamente (y TikTok no está conectado). Opciones futuras: Instagram Graph API
   (cuenta profesional + app de Meta), TikTok Content Posting API (requiere revisión de la app) o YouTube Data API,
   o un conector de terceros. Ninguna está implementada.
 - No gasta dinero: si se agota el cupo mensual de ElevenLabs, deja el guion listo y avisa.
 
-## Requisito pendiente: voz en la ejecución diaria
-La tarea programada no puede llevar el conector de ElevenLabs (la organización no permite adjuntar conectores
-a tareas creadas desde una sesión). Hay que activar **una** de estas dos vías; sin ellas, cada día se prepara y
-commitea el guion, pero no se genera vídeo:
-
-1. **Clave de API como secreto del entorno** (recomendada): en claude.ai → Claude Code → entorno «Rea» →
-   Network secrets → host `api.elevenlabs.io`, cabecera `xi-api-key`, valor = tu API key de ElevenLabs
-   (puede ser una clave restringida a Text to Speech + lectura de usuario). O pedir a Claude que muestre el formulario.
-2. **Recrear la tarea desde la web de rutinas de claude.ai** con el conector de ElevenLabs adjunto, usando el
-   mismo texto de la tarea «Reel diario · Contenido Inmobiliario».
+## Voz en la ejecución diaria
+La tarea programada se ejecuta **dentro de la sesión de Claude que la creó**, que tiene conectados Composio
+(ElevenLabs, Instagram, YouTube, Dropbox) y el conector de ElevenLabs. Las sesiones nuevas no heredan conectores,
+por eso no se usa el modo «sesión nueva cada día».
+Orden de vías para la voz: Composio (`ELEVENLABS_TEXT_TO_SPEECH`) → conector de ElevenLabs → API con clave
+guardada como secreto del entorno (`herramientas/elevenlabs.py`). Si ninguna funciona, se deja el guion listo y se avisa.
 
 ## Cupo de voz
 ≈ 700 créditos por reel de 45 s → ≈ 21.000 al mes con un reel diario. El plan Creator da 122.038 al mes

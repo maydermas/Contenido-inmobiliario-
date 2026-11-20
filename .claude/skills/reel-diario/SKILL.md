@@ -31,6 +31,14 @@ Si algo no se puede verificar, **no se dice**. Anota fuentes en `editorial.yaml 
 - `cd motor && npm run validar -- ../contenido/videos/<ID>` sin errores.
 
 ## 4. Voz (ElevenLabs, solo dentro del cupo)
+**Vía preferente — Composio (cuenta de ElevenLabs conectada, alias «voces-nico»):**
+1. `COMPOSIO_SEARCH_TOOLS` (sesión nueva) y `ELEVENLABS_GET_USER_SUBSCRIPTION_INFO`: restante = `character_limit − character_count`.
+2. Texto = los `voz` de los bloques unidos con una línea en blanco. Coste ≈ nº de caracteres (multilingual v2).
+   **Si restante − caracteres < 3000 → no generes** (ver más abajo).
+3. `ELEVENLABS_TEXT_TO_SPEECH` una sola vez: `voice_id: E1MLwoobU29hxksWgI7o`, `model_id: eleven_multilingual_v2`,
+   `text: <texto>`. Descarga `data.file.s3url` (caduca en 1 h) con `curl -sS -o contenido/videos/<ID>/audio/voz-original.mp3 "<s3url>"`
+   y guarda el texto exacto en `audio/texto-locucion.txt`. Nunca repitas la generación si ya se cobró.
+
 **Vía B — API (si no tienes las herramientas `mcp__ElevenLabs__*`):**
 `.venv/bin/python herramientas/elevenlabs.py contenido/videos/<ID> --estimar` y, si el cupo alcanza, sin `--estimar`.
 El script comprueba el cupo (reserva de 3.000) y guarda `audio/voz-original.mp3` y `audio/texto-locucion.txt`.
