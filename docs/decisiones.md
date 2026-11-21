@@ -17,3 +17,4 @@ Decisiones del propietario y técnicas que matizan las directivas. La más recie
 | 2026-11-20 | **Marca: Capital 4 Tune** (Instagram @capital4thunel). «Lo estudiamos juntos» queda como lema. | Propietario. |
 | 2026-11-20 | **Publicación directa diaria solo en Instagram** (@capital4thunel) vía Composio; al publicar se envía al propietario el reel y su pie. | Propietario. |
 | 2026-11-20 | Voz vía Composio (cuenta ElevenLabs «voces-nico»). Tarea programada en la sesión con conectores. | Las sesiones nuevas no heredan conectores. |
+| 2026-11-21 | Instagram: usar siempre la conexión `instagram_amazed-arear` en todas las llamadas (nunca la conexión por defecto) y verificar `username == capital4thunel` antes de publicar; si no coincide, no publicar y avisar. | Propietario. |

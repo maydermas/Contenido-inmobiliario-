@@ -66,6 +66,13 @@ anota «falta voz» en `contenido/diario.md` y notifica al propietario cómo act
 
 ## 5 bis. Publicar en Instagram (antes de producir, cada día)
 Cuenta: **@capital4thunel** (Composio, toolkit `instagram`, alias `capital-4-tune`, cuenta `instagram_amazed-arear`).
+
+**Regla obligatoria de cuenta (propietario):**
+- En **todas** las llamadas a herramientas `INSTAGRAM_*` pasa siempre `account: "instagram_amazed-arear"`.
+  Nunca uses la conexión por defecto ni omitas `account` (hay otras cuentas de Instagram conectadas en Composio).
+- **Antes de publicar**, llama a `INSTAGRAM_GET_USER_INFO` con `account: "instagram_amazed-arear"` y comprueba que
+  `username` es exactamente `capital4thunel`. Si no lo es (o la llamada falla), **no crees el contenedor ni publiques**:
+  anótalo en `contenido/diario.md` y avisa al propietario indicando qué username devolvió la conexión.
 Publicación directa autorizada por el propietario. **Solo Instagram.** Exactamente 1 publicación al día:
 1. Si `contenido/publicaciones.json` ya tiene una publicación con la fecha de hoy, no publiques otra.
 2. `cd motor && node scripts/publicar.mjs siguiente` → `{ id, video_url, caption }` (el más antiguo listo y no publicado;

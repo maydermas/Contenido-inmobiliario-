@@ -17,6 +17,8 @@ Una tarea programada despierta cada día la sesión de Claude del proyecto, que 
 
 ## Publicación
 - **Solo Instagram**, cuenta **@capital4thunel** (Composio), publicación directa autorizada por el propietario.
+- Todas las llamadas a Instagram usan siempre la conexión `instagram_amazed-arear`, nunca la conexión por defecto.
+  Antes de publicar se comprueba que su username es `capital4thunel`; si no lo es, no se publica y se avisa al propietario.
 - Una publicación al día, a las 12:41 (Madrid). Se publica el vídeo más antiguo listo (auditoría ≥ 85) y aún no publicado;
   así siempre hay ~1 día de margen por si una producción falla.
 - El MP4 se sirve desde la rama `medios` del repositorio (público) para que Instagram lo descargue; esa rama se reescribe
