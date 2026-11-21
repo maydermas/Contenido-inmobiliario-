@@ -25,3 +25,5 @@
 | Endeudamiento: las entidades suelen considerar que la carga de deudas no supere 30–35 % de ingresos | P02 | Banco de España, guía «Qué tengo que saber si voy a pedir una hipoteca» / código de buenas prácticas (bde.es) | 20/11/2026 | Criterio habitual, **no límite legal**: así se dice en pantalla. |
 | Fianza en arrendamiento de uso distinto de vivienda: dos mensualidades | P03 | Ley 29/1994 de Arrendamientos Urbanos, art. 36.1 (BOE) | 20/11/2026 | Vigente. Se indica que pueden pactarse garantías adicionales. |
 | Punto de equilibrio = gastos fijos ÷ margen de contribución | P03 | Definición contable estándar | — | Cálculo; ejemplo marcado como hipotético. |
+| Arras penitenciales: quien desiste pierde la señal; si es el vendedor, la devuelve duplicada; deben pactarse expresamente | V004 | Código Civil, art. 1454; jurisprudencia del Tribunal Supremo | 21/11/2026 | Vigente. |
+| Nota simple: extracto informativo con titular y cargas inscritas (hipotecas, embargos) | V004 | Colegio de Registradores (registradores.org) | 21/11/2026 | Precio no publicado en el vídeo (fuentes discrepantes). |

@@ -32,6 +32,17 @@
       "estilo": "D",
       "cta": "escribir",
       "fecha": "2026-11-20"
+    },
+    {
+      "id": "V004-antes-de-entregar-una-senal",
+      "titulo": "Antes de entregar una señal, dedica un minuto a esto",
+      "gancho": "Antes de entregar una señal, dedica un minuto a esto.",
+      "pilar": "realidad-inmobiliaria",
+      "emocion": "confianza",
+      "formato": "lista-de-comprobacion",
+      "estilo": "A",
+      "cta": "guardar",
+      "fecha": "2026-11-21"
     }
   ]
 }

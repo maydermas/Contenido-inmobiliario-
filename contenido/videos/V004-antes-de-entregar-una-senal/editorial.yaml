@@ -1,0 +1,74 @@
+concepto:
+  tema: "Tres comprobaciones antes de entregar una señal (arras) por una vivienda"
+  publico: "Personas que están visitando viviendas y a punto de reservar una en Almería y alrededores"
+  problema: "Se entrega la señal para «asegurar» la casa sin saber qué tipo de arras se firma ni qué pasa si algo falla"
+  emocion: "Confianza: tres pasos claros que dan control antes de pagar"
+  objetivo: "Que la persona guarde el vídeo y lo revise antes de su próxima visita"
+
+ganchos:
+  - { texto: "Antes de entregar una señal, dedica un minuto a esto.", familia: E, atencion: 5, identificacion: 5, claridad: 5, curiosidad: 5, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "Puedes perder la señal de una casa sin haber hecho nada mal.", familia: A, atencion: 5, identificacion: 4, claridad: 4, curiosidad: 5, intensidad: 4, credibilidad: 3, relacion: 4 }
+  - { texto: "Una señal no es un simple adelanto.", familia: D, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "¿Sabes qué tipo de arras has firmado?", familia: H, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "Si vas a reservar una casa esta semana, escucha esto.", familia: B, atencion: 4, identificacion: 5, claridad: 4, curiosidad: 3, intensidad: 3, credibilidad: 5, relacion: 4 }
+  - { texto: "Lo que nadie te explica antes de pagar la reserva de una vivienda.", familia: C, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 4, relacion: 5 }
+  - { texto: "Si este contrato no te protege, prefiero decírtelo antes.", familia: G, atencion: 3, identificacion: 3, claridad: 3, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 4 }
+  - { texto: "Nunca confundas reservar una casa con asegurarla.", familia: D, atencion: 4, identificacion: 4, claridad: 3, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 4 }
+  - { texto: "Tres cosas que revisaría antes de dar una señal.", familia: C, atencion: 4, identificacion: 4, claridad: 5, curiosidad: 4, intensidad: 2, credibilidad: 5, relacion: 5 }
+  - { texto: "Antes de reservar, ten claro qué pierdes si te echas atrás.", familia: E, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 5 }
+elegido: 0
+motivo: "Urgencia racional sin miedo: promete algo corto y útil (un minuto) que el vídeo cumple con tres pasos. El gancho «puedes perder la señal sin haber hecho nada mal» se descartó por credibilidad: depende del contrato."
+
+storyboard:
+  gancho: { imagen: "Mesa de madera con un contrato de arras, un sobre con «SEÑAL» y unas llaves.", camara: "Dolly in lento con titular arriba.", sonido: "Música serena, voz", objetivo: "Situar el momento de reservar." }
+  identificacion: { imagen: "Vivienda mediterránea al atardecer, texto «Te piden una señal».", camara: "Dolly in.", sonido: "Música", objetivo: "Empatía: es normal querer asegurarla." }
+  problema: { imagen: "«Un simple adelanto» se tacha y aparece «Puedes perderla».", camara: "Fija.", sonido: "Whoosh suave", objetivo: "Cambiar la percepción de la señal." }
+  nota-simple: { imagen: "Nota simple sobre la mesa con casillas que se marcan: propietario, hipotecas, embargos.", camara: "Acercamiento con giro leve.", sonido: "Papel + ticks", objetivo: "Paso 1 concreto y verificable." }
+  tipo-de-arras: { imagen: "Ticket «Arras penitenciales»: te retiras tú / se retira él.", camara: "Subida suave.", sonido: "Ticks", objetivo: "Paso 2: entender qué se firma." }
+  hipoteca: { imagen: "Pregunta en grande y respuesta «Que quede por escrito».", camara: "Fija.", sonido: "Pop", objetivo: "Paso 3: condición de financiación." }
+  conclusion: { imagen: "Llave dorada con halo; frase en serif.", camara: "Dolly in.", sonido: "Música abriéndose", objetivo: "Idea memorable." }
+  cta: { imagen: "Icono de guardar + firma Capital 4 Tune.", camara: "Fija.", sonido: "Pop suave", objetivo: "Guardar." }
+
+prompts:
+  nota: "Hecho por código (ilustración 2.5D propia). Prompt opcional para un plano futuro con vídeo generativo; sin personas identificables."
+  lista:
+    - { escena: gancho, tipo: "texto→vídeo (Wan 2.2)", prompt: "Top-down slow push-in on a wooden desk with a property reservation contract, a beige envelope and brass house keys, warm window light, documentary style, 9:16, no hands, no readable text" }
+
+publicacion:
+  portada: "Antes de entregar una señal, mira esto"
+  descripcion: |
+    Te gusta la casa y te piden una señal para reservarla. Antes de pagar, tres comprobaciones:
+    1️⃣ Pide la nota simple del Registro de la Propiedad: verás quién es el titular y si hay hipotecas o embargos inscritos.
+    2️⃣ Lee qué tipo de arras firmas. Con arras penitenciales (art. 1454 del Código Civil), si te echas atrás pierdes la señal y, si se echa atrás el vendedor, te la devuelve duplicada. Tienen que pactarse de forma expresa.
+    3️⃣ Pregunta qué pasa con la señal si el banco no te concede la hipoteca. Si no está escrito, no está pactado.
+    Información general: revisa tu contrato con un profesional antes de firmar.
+  cta: "Guarda este vídeo antes de tu próxima visita. ¿Dudas con una reserva? Escríbeme y lo estudiamos juntos."
+  hashtags: ["#arras", "#señal", "#comprarvivienda", "#notasimple", "#primeravivienda", "#consejosinmobiliarios", "#Almería", "#RoquetasDeMar", "#vivienda"]
+  tiktok: "Texto en portada: «¿Vas a dejar una señal?». Pregunta para comentarios: «¿Te explicaron qué tipo de arras firmabas?»."
+  instagram: "Reel con el pie completo (3 pasos numerados). Comentario fijado: «Guárdalo para tu próxima visita»."
+  youtube: "Título: «Antes de dejar una señal por una casa, revisa esto (arras)». #Shorts."
+
+fuentes:
+  - "Código Civil, art. 1454 (arras penitenciales: quien desiste pierde las arras; el vendedor las devuelve duplicadas). Jurisprudencia del Tribunal Supremo: deben pactarse de forma expresa (consultado 21/11/2026)."
+  - "Colegio de Registradores: la nota simple es un extracto informativo con titularidad y cargas inscritas (hipotecas, embargos), solicitable en el Registro o en registradores.org (consultado 21/11/2026)."
+
+qc: "1080×1920 · 30 fps · H.264 High · yuv420p · 7,3 Mbps · −17,0 LUFS · pico −3,9 dBTP · sin negros ni congelados (herramientas/qc.sh)."
+
+auditoria:
+  puntuaciones:
+    Gancho: 9
+    Identificación: 9
+    Utilidad: 10
+    Claridad: 9
+    Emoción: 7
+    Retención: 8
+    Credibilidad: 10
+    Narrativa: 8
+    Calidad visual: 8
+    Conversión: 9
+  problemas:
+    - "Estructura de lista: muy útil pero menos emocional que una historia."
+    - "Segunda línea del ticket de arras aparece con poco margen antes del cambio de escena."
+    - "Mezcla de audio verificada con medidas, no a oído."
+  mejoras:
+    - "Corregido antes del render: ilustración nueva del gancho (contrato + sobre + llaves) sin pisar titular ni subtítulos; símbolo del ticket configurable; segunda línea sincronizada con «vendedor»."

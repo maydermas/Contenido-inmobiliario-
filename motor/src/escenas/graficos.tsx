@@ -16,7 +16,7 @@ const panel = (claro = false): React.CSSProperties => ({
 /* ───────── 4. KineticTypography ───────── */
 type Linea = { texto: string; en: string };
 export const KineticTypography: React.FC<
-  EscenaProps<{ variante: "titular" | "recibo" | "contraste" | "pregunta"; lineas: (string | Linea)[]; titulo?: string; respuesta?: string; en?: string; cambiarEn?: string }>
+  EscenaProps<{ variante: "titular" | "recibo" | "contraste" | "pregunta"; lineas: (string | Linea)[]; titulo?: string; respuesta?: string; en?: string; cambiarEn?: string; simbolo?: string }>
 > = ({ dur, marca, props }) => {
   const frame = useCurrentFrame();
   const v = props.variante;
@@ -60,7 +60,7 @@ export const KineticTypography: React.FC<
                   <div key={i} style={{ display: "flex", alignItems: "baseline", gap: 14, height: 112, opacity: p, transform: `translateX(${(1 - p) * -30}px)` }}>
                     <span style={{ fontFamily: F.sans, fontWeight: 700, fontSize: 46, color: C.gris, whiteSpace: "nowrap" }}>{l.texto}</span>
                     <span style={{ flex: 1, borderBottom: "4px dotted rgba(38,43,41,.35)", transform: "translateY(-10px)" }} />
-                    <span style={{ fontFamily: F.sans, fontWeight: 800, fontSize: 46, color: C.bronceOscuro }}>€</span>
+                    <span style={{ fontFamily: F.sans, fontWeight: 800, fontSize: 46, color: C.bronceOscuro }}>{props.simbolo ?? "€"}</span>
                   </div>
                 );
               })}

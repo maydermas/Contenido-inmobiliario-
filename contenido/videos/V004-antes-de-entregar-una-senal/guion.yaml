@@ -1,0 +1,99 @@
+# V004 · Estilo A — lista de comprobación antes de entregar una señal (arras)
+id: V004-antes-de-entregar-una-senal
+titulo: "Antes de entregar una señal, dedica un minuto a esto"
+estilo: A
+pilar: realidad-inmobiliaria
+emocion: confianza
+formato: lista-de-comprobacion
+voz:
+  proveedor: elevenlabs
+  voice_id: E1MLwoobU29hxksWgI7o
+  modelo: eleven_multilingual_v2
+musica:
+  tono: sereno
+  bpm: 78
+bloques:
+  - id: gancho
+    voz: "Antes de entregar una señal, dedica un minuto a esto."
+    destacar: [señal, minuto]
+    escena:
+      tipo: CinematicIntro
+      props:
+        ilustracion: mesa-arras
+        titular: ["Antes de entregar una señal,", "dedica *un minuto* a esto"]
+
+  - id: identificacion
+    voz: "Has encontrado la casa, te gusta, y te piden una señal para reservarla. Es normal querer asegurarla."
+    destacar: [señal, reservarla]
+    escena:
+      tipo: CinematicScene
+      props:
+        ilustracion: casa-atardecer
+        movimiento: dolly-in
+        texto: "Te piden una *señal*"
+        etiqueta: Imagen ilustrativa
+
+  - id: problema
+    voz: "Pero esa señal no es un simple adelanto. Según cómo se firme, puedes perderla."
+    destacar: [adelanto, perderla]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: contraste
+        lineas: ["Un simple *adelanto*", "Puedes *perderla*"]
+        cambiarEn: perderla
+
+  - id: nota-simple
+    voz: "Primero, pide una nota simple. Te dice quién es el propietario y si la vivienda tiene hipotecas o embargos."
+    destacar: [nota, simple]
+    escena:
+      tipo: DocumentReveal
+      props:
+        documento: Nota simple
+        lista:
+          - { texto: Quién es el propietario, en: propietario }
+          - { texto: Hipotecas, en: hipotecas, destacada: true }
+          - { texto: Embargos, en: embargos, destacada: true }
+        fuente: "Se pide en el Registro de la Propiedad o en registradores.org. Es informativa: muestra titular y cargas inscritas."
+
+  - id: tipo-de-arras
+    voz: "Segundo, lee qué tipo de arras firmas. Si son penitenciales y te echas atrás, pierdes la señal. Si se echa atrás el vendedor, te la devuelve duplicada."
+    destacar: [penitenciales, pierdes, duplicada]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: recibo
+        titulo: Arras penitenciales
+        simbolo: "!"
+        lineas:
+          - { texto: "Te retiras tú: la pierdes", en: pierdes }
+          - { texto: "Se retira él: la devuelve doble", en: vendedor }
+
+  - id: hipoteca
+    voz: "Y tercero, pregunta qué pasa con la señal si el banco no te concede la hipoteca. Si no está escrito, no está pactado."
+    destacar: [hipoteca, escrito]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: pregunta
+        lineas: ["¿Y si el banco", "no te concede la *hipoteca*?"]
+        respuesta: Que quede por escrito
+        en: escrito
+
+  - id: conclusion
+    voz: "Una señal se entrega en un minuto. Recuperarla puede costar mucho más."
+    destacar: [minuto, recuperarla]
+    escena:
+      tipo: EmotionalEnding
+      props:
+        ilustracion: llaves
+        frase: ["Se entrega *en un minuto*.", "Recuperarla cuesta más."]
+
+  - id: cta
+    voz: "Guarda este vídeo antes de tu próxima visita."
+    destacar: [Guarda]
+    escena:
+      tipo: CTAEnding
+      props:
+        accion: guardar
+        texto: Guárdalo antes de tu próxima visita

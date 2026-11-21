@@ -13,6 +13,30 @@ export const ILUSTRACIONES: Record<string, React.FC<{ t: number; frame: number }
   "casa-atardecer": ({ t }) => <CasaAtardecer t={t} luces={interpolate(t, [0.1, 0.7], [0.15, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />,
   "ventana-luz": ({ frame }) => <VentanaLuz frame={frame} />,
   mesa: () => <Mesa />,
+  // contrato de arras con sobre de «señal» y llaves (gancho de vídeos sobre reservas y arras)
+  "mesa-arras": ({ frame }) => (
+    <AbsoluteFill>
+      <Mesa />
+      <div style={{ position: "absolute", left: 150, top: 610, transform: "rotate(-5deg)" }}>
+        <Hoja titulo="Contrato de arras" ancho={680} alto={500} lineas={6} />
+      </div>
+      <div
+        style={{
+          position: "absolute", left: 580, top: 860, width: 380, height: 230, transform: `rotate(${8 + Math.sin(frame / 30) * 0.6}deg)`,
+          background: "linear-gradient(160deg, #e9dcc3 0%, #d6c5a6 100%)", borderRadius: 8, boxShadow: "0 30px 60px rgba(0,0,0,.45)",
+          display: "flex", alignItems: "center", justifyContent: "center",
+        }}
+      >
+        <svg width={380} height={230} viewBox="0 0 380 230" style={{ position: "absolute", inset: 0 }}>
+          <path d="M0 0 L190 120 L380 0" fill="none" stroke="rgba(38,43,41,.25)" strokeWidth={3} />
+        </svg>
+        <div style={{ fontFamily: F.sans, fontWeight: 800, fontSize: 46, letterSpacing: 8, color: C.verde, marginTop: 70 }}>SEÑAL</div>
+      </div>
+      <div style={{ position: "absolute", left: 140, top: 1120, transform: "rotate(-18deg)" }}>
+        <Llave tam={300} />
+      </div>
+    </AbsoluteFill>
+  ),
 };
 
 /* ───────── 1. CinematicIntro: plano general + titular ───────── */

@@ -6,11 +6,11 @@ se convierte en serif cursiva bronce.
 
 | Tipo | Estilo | Props principales | Uso |
 |---|---|---|---|
-| `CinematicIntro` | A | `ilustracion` (`casa-atardecer`, `ventana-luz`, `mesa`), `titular[]`, `etiqueta` | Gancho con plano general y titular. |
+| `CinematicIntro` | A | `ilustracion` (`casa-atardecer`, `ventana-luz`, `mesa`, `mesa-arras`), `titular[]`, `etiqueta` | Gancho con plano general y titular. |
 | `CinematicScene` | A | `ilustracion`, `texto`, `movimiento` (`dolly-in`, `dolly-out`, `paneo`), `etiqueta` | Plano de apoyo. |
 | `ParallaxScene` | A/B | `revelarEn` | Casa con etiqueta «Precio»; la cámara baja y revela «Lo que viene después». |
 | `DocumentReveal` | A | `documento`, `marca` (firma) **o** `lista[{texto,en,destacada}]`, `fuente` | Contrato sobre la mesa / checklist que se marca. |
-| `KineticTypography` | C | `variante`: `titular` (`lineas[]`), `recibo` (`titulo`, `lineas[{texto,en}]`), `contraste` (`lineas[2]`, `cambiarEn`), `pregunta` (`lineas[]`, `respuesta`, `en`) | Tipografía animada. |
+| `KineticTypography` | C | `variante`: `titular` (`lineas[]`), `recibo` (`titulo`, `lineas[{texto,en}]`, `simbolo`), `contraste` (`lineas[2]`, `cambiarEn`), `pregunta` (`lineas[]`, `respuesta`, `en`) | Tipografía animada. |
 | `FinancialChart` | C | `variante`: `pila` (`base`, `piezas[]`, `titulo`, `fuente`), `anillo` (`desde`, `hasta`, `etiqueta`, `en`, `fuente`), `barras` (`filas[{texto,valor,en,destacada}]`, `etiqueta`) | Gastos apilados, porcentaje, cascada de importes. |
 | `AnimatedNumber` | C | `variante`: `hucha` (`lineas[]`, `conclusion`), `calculadora` (`operacion[]`, `resultado{texto,valor,en}`, `nota`, `etiqueta`) | Cifras que cuentan. |
 | `ComparisonScene` | B/D | `variante`: `balanza` (`izquierda`, `derecha`, `inclinarHacia`), `tarjetas` (`signo`, `tacharEn`), `giro` (`cambiarEn`) | Comparar dos ideas. |
