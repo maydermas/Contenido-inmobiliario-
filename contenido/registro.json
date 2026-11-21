@@ -1,6 +1,17 @@
 {
   "videos": [
     {
+      "id": "P01-casa-de-tus-suenos",
+      "titulo": "La casa de tus sueños puede convertirse en tu peor decisión",
+      "gancho": "La casa de tus sueños puede convertirse en tu peor decisión.",
+      "pilar": "errores-que-cuestan-dinero",
+      "emocion": "precaucion",
+      "formato": "historia-cinematografica",
+      "estilo": "A",
+      "cta": "guardar",
+      "fecha": "2026-11-20"
+    },
+    {
       "id": "P02-sueldo-e-hipoteca",
       "titulo": "Tener un sueldo no significa que puedas permitirte una hipoteca",
       "gancho": "Tener un sueldo no significa que puedas permitirte una hipoteca.",
@@ -20,17 +31,6 @@
       "formato": "caso-hipotetico",
       "estilo": "D",
       "cta": "escribir",
-      "fecha": "2026-11-20"
-    },
-    {
-      "id": "P01-casa-de-tus-suenos",
-      "titulo": "La casa de tus sueños puede convertirse en tu peor decisión",
-      "gancho": "La casa de tus sueños puede convertirse en tu peor decisión.",
-      "pilar": "errores-que-cuestan-dinero",
-      "emocion": "precaucion",
-      "formato": "historia-cinematografica",
-      "estilo": "A",
-      "cta": "guardar",
       "fecha": "2026-11-20"
     }
   ]
