@@ -14,3 +14,6 @@ Decisiones del propietario y técnicas que matizan las directivas. La más recie
 | 2026-11-20 | Música original generada por código (`herramientas/musica.py`) y efectos propios. | Directiva 2.0 §5: licencia propia, coste cero. |
 | 2026-11-20 | Remotion: licencia gratuita válida mientras el equipo sea de 3 personas o menos. Si crece, revisar. | Licencia de Remotion. |
 | 2026-11-20 | Piloto 1: se regeneró la voz para no decir que IBI y seguro se pagan «cada mes» (suelen ser anuales). | Exactitud del contenido. |
+| 2026-11-20 | **Marca: Capital 4 Tune** (Instagram @capital4thunel). «Lo estudiamos juntos» queda como lema. | Propietario. |
+| 2026-11-20 | **Publicación directa diaria solo en Instagram** (@capital4thunel) vía Composio; al publicar se envía al propietario el reel y su pie. | Propietario. |
+| 2026-11-20 | Voz vía Composio (cuenta ElevenLabs «voces-nico»). Tarea programada en la sesión con conectores. | Las sesiones nuevas no heredan conectores. |

@@ -102,8 +102,10 @@ fs.writeFileSync(
 console.log(`  composición "${guion.id}" lista (${tdata.duracionVoz.toFixed(1)} s de voz)`);
 
 // Registro de producción (control de repetición)
-const entrada = { id: guion.id, titulo: guion.titulo, gancho: guion.bloques[0].voz, pilar: guion.pilar, emocion: guion.emocion, formato: guion.formato, estilo: guion.estilo, cta: guion.bloques.at(-1).escena?.props?.accion, fecha: new Date().toISOString().slice(0, 10) };
-registro.videos = [...(registro.videos ?? []).filter((r) => r.id !== guion.id), entrada];
+const entrada = { id: guion.id, titulo: guion.titulo, gancho: guion.bloques[0].voz, pilar: guion.pilar, emocion: guion.emocion, formato: guion.formato, estilo: guion.estilo, cta: guion.bloques.at(-1).escena?.props?.accion, fecha: (registro.videos ?? []).find((r) => r.id === guion.id)?.fecha ?? new Date().toISOString().slice(0, 10) };
+const i = (registro.videos ?? []).findIndex((r) => r.id === guion.id);
+if (i >= 0) registro.videos[i] = entrada;
+else registro.videos = [...(registro.videos ?? []), entrada];
 fs.writeFileSync(regPath, JSON.stringify(registro, null, 2) + "\n");
 
 // 6 · Render + QC

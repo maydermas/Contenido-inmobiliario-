@@ -15,11 +15,13 @@ Una tarea programada despierta cada día la sesión de Claude del proyecto, que 
 7. Auditoría ≥ 85/100 o se marca «NO PUBLICAR: revisar».
 8. Commit + push en `main`, registro en `contenido/diario.md` y envío del MP4 con el texto de publicación.
 
-## Lo que NO hace (y por qué)
-- **No publica en Instagram, TikTok ni YouTube.** Composio tiene Instagram y YouTube conectados, pero publicar en
-  nombre de la marca es una acción pública que el propietario debe autorizar expresamente (y TikTok no está conectado). Opciones futuras: Instagram Graph API
-  (cuenta profesional + app de Meta), TikTok Content Posting API (requiere revisión de la app) o YouTube Data API,
-  o un conector de terceros. Ninguna está implementada.
+## Publicación
+- **Solo Instagram**, cuenta **@capital4thunel** (Composio), publicación directa autorizada por el propietario.
+- Una publicación al día, a las 12:41 (Madrid). Se publica el vídeo más antiguo listo (auditoría ≥ 85) y aún no publicado;
+  así siempre hay ~1 día de margen por si una producción falla.
+- El MP4 se sirve desde la rama `medios` del repositorio (público) para que Instagram lo descargue; esa rama se reescribe
+  en cada publicación y solo contiene el vídeo pendiente.
+- Tras publicar, el propietario recibe el reel y su pie completo. Registro en `contenido/publicaciones.json`.
 - No gasta dinero: si se agota el cupo mensual de ElevenLabs, deja el guion listo y avisa.
 
 ## Voz en la ejecución diaria
@@ -35,8 +37,8 @@ guardada como secreto del entorno (`herramientas/elevenlabs.py`). Si ninguna fun
 el sistema lo comprueba cada día antes de generar.
 
 ## Hora
-La tarea se lanza a las 05:37 (hora de Madrid) para que el reel esté listo por la mañana.
-Hora recomendada de publicación: entre 13:00 y 14:30 o entre 20:00 y 22:00 (ajustar con métricas reales).
+La tarea se lanza a las 12:41 (hora de Madrid): publica primero y después produce el vídeo del día siguiente.
+Ajustar la hora con métricas reales (franjas habituales: 13:00–14:30 y 20:00–22:00).
 
 ## Supervisión
 - `contenido/diario.md`: una línea por día (tema, nota, créditos, incidencias).

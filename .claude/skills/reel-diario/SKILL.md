@@ -4,6 +4,8 @@ description: Producción diaria automática de un reel completo (elegir tema, ve
 ---
 # Reel diario (sin supervisión)
 
+Orden de cada día: **0 entorno → 5 bis publicar el siguiente de la cola → 1–6 producir el de mañana**.
+
 Trabajas solo: nadie revisa antes de que termines. Sé conservador: si algo no cumple las normas, **no lo entregues como listo**.
 Normas: `CLAUDE.md`, `docs/directivas/`, `docs/automatizacion.md`. Fecha de hoy = fecha del sistema (zona Europe/Madrid).
 
@@ -62,6 +64,23 @@ anota «falta voz» en `contenido/diario.md` y notifica al propietario cómo act
 3. Si tocas código del motor: `npx tsc --noEmit` y no rompas escenas existentes (cambios compatibles, props opcionales).
 4. `npm run producir -- ../contenido/videos/<ID> --render` → todo ✓ en el control de calidad.
 
+## 5 bis. Publicar en Instagram (antes de producir, cada día)
+Cuenta: **@capital4thunel** (Composio, toolkit `instagram`, alias `capital-4-tune`, cuenta `instagram_amazed-arear`).
+Publicación directa autorizada por el propietario. **Solo Instagram.** Exactamente 1 publicación al día:
+1. Si `contenido/publicaciones.json` ya tiene una publicación con la fecha de hoy, no publiques otra.
+2. `cd motor && node scripts/publicar.mjs siguiente` → `{ id, video_url, caption }` (el más antiguo listo y no publicado;
+   si `id` es null, no hay cola: publica el que produzcas hoy en cuanto pase la auditoría, repitiendo este paso).
+3. Comprueba que la URL responde: `curl -sI "<video_url>"` → 200.
+4. `INSTAGRAM_POST_IG_USER_MEDIA` con `ig_user_id: "me"`, `video_url`, `media_type: "REELS"`, `share_to_feed: true`,
+   `caption` (texto tal cual, con `#` normales) y `thumb_offset: 1500` → `creation_id`.
+5. `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` con `ig_user_id: "me"`, `creation_id`, `max_wait_seconds: 300`.
+   Si falla por 9007/«not available», espera y reintenta el **publish** con el mismo `creation_id` (nunca crees otro
+   contenedor si el anterior pudo publicarse: comprueba antes con `INSTAGRAM_GET_IG_USER_MEDIA`).
+6. `INSTAGRAM_GET_IG_MEDIA` (campos `id,permalink,caption`) → comprueba que el pie se ve bien (sin `%23`).
+7. `node scripts/publicar.mjs registrar <ID> <ig_media_id> <permalink>`; commit y push.
+8. Envía al propietario con `SendUserFile` (status `proactive`) el MP4 publicado y, en el mensaje, el enlace y el
+   **pie completo** (contenido de `PIE.txt`).
+
 ## 6. Auditoría y entrega
 - Auditoría honesta en `editorial.yaml → auditoria` (10 × 10). Si < 85: mejora y vuelve a renderizar (máx. 2 veces).
   Si sigue < 85, entrégalo marcado «NO PUBLICAR: revisar».
@@ -69,9 +88,8 @@ anota «falta voz» en `contenido/diario.md` y notifica al propietario cómo act
 - Marca el tema `producido` en el banco con `video: <ID>` y `fecha`. Añade una línea a `contenido/diario.md`
   (fecha, ID, tema, nota, créditos usados y restantes, incidencias).
 - Commit en español en `main` y `git push origin main`.
-- Envía al propietario con `SendUserFile` (status `proactive`) el MP4 de `salida/<ID>.mp4` y, en el mensaje,
-  el texto listo para copiar: portada, descripción, hashtags y hora recomendada de publicación.
-- **No publiques en redes**: la publicación la hace el propietario (o una integración autorizada en el futuro).
+- El vídeo producido hoy queda en la cola de publicación: se envía al propietario (MP4 + pie) el día que se publique
+  (paso 5 bis). Si hoy no había cola, se publica hoy mismo en cuanto pase la auditoría.
 
 ## Si algo falla
 No ocultes errores. Commitea lo que sea válido, deja constancia en `contenido/diario.md` y notifica qué falló y qué falta.

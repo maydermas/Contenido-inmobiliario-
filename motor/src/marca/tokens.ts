@@ -9,7 +9,7 @@ import "@fontsource/cormorant-garamond/600-italic.css";
 import { continueRender, delayRender } from "remotion";
 
 export const MARCA = {
-  nombre: "Lo Estudiamos", // provisional hasta elegir nombre definitivo
+  nombre: "Capital 4 Tune", // canal de Instagram @capital4thunel
   lema: "No pienso ofrecerte nada de lo que sepa que en un futuro te puedas arrepentir.",
   firma: "Lo estudiamos juntos",
 };

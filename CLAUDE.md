@@ -1,4 +1,4 @@
-# CLAUDE.md — Contenido Inmobiliario (marca provisional: «Lo Estudiamos»)
+# CLAUDE.md — Contenido Inmobiliario · marca Capital 4 Tune (Instagram @capital4thunel)
 
 Motor de producción audiovisual para una marca personal **faceless** de asesoramiento inmobiliario,
 educación financiera y decisiones inteligentes (Roquetas de Mar, Aguadulce, Almería y resto de España).
@@ -65,4 +65,4 @@ salida/                    MP4 renderizados (no se versiona)
 
 ## Producción diaria automática
 Un reel al día mediante una tarea programada que sigue `.claude/skills/reel-diario/SKILL.md` (ver `docs/automatizacion.md`).
-Temas en `contenido/banco-de-temas.yaml`; registro en `contenido/diario.md`. Nunca publica en redes: entrega el MP4 y el texto.
+Temas en `contenido/banco-de-temas.yaml`; registro en `contenido/diario.md`. Publica 1 reel al día solo en Instagram (@capital4thunel, vía Composio) y envía al propietario el reel y su pie.
