@@ -43,6 +43,17 @@
       "estilo": "A",
       "cta": "guardar",
       "fecha": "2026-11-21"
+    },
+    {
+      "id": "V005-ocupado-no-es-progresar",
+      "titulo": "No confundas estar ocupado con estar progresando",
+      "gancho": "No confundas estar ocupado con estar progresando.",
+      "pilar": "crecimiento-personal",
+      "emocion": "reflexion",
+      "formato": "reflexion-personal",
+      "estilo": "B",
+      "cta": "escribir",
+      "fecha": "2026-11-22"
     }
   ]
 }

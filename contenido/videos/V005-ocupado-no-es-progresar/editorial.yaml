@@ -1,0 +1,69 @@
+concepto:
+  tema: "La diferencia entre estar ocupado y progresar, con un hábito semanal concreto"
+  publico: "Personas de 25–45 años que trabajan mucho y sienten que no avanzan (ahorro, vivienda, proyectos)"
+  problema: "Semanas llenas de urgencias que no acercan a ningún objetivo propio"
+  emocion: "Reflexión que termina en alivio («basta con una sola cosa»)"
+  objetivo: "Generar comentarios (cuál sería su «una sola cosa») y conexión con la comunidad"
+
+ganchos:
+  - { texto: "No confundas estar ocupado con estar progresando.", familia: D, atencion: 5, identificacion: 5, claridad: 5, curiosidad: 4, intensidad: 4, credibilidad: 5, relacion: 5 }
+  - { texto: "Si trabajas todos los días y sientes que no avanzas, escucha esto.", familia: B, atencion: 4, identificacion: 5, claridad: 4, curiosidad: 4, intensidad: 4, credibilidad: 5, relacion: 4 }
+  - { texto: "¿Cuándo fue la última semana en la que avanzaste de verdad?", familia: H, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 4, credibilidad: 5, relacion: 4 }
+  - { texto: "Hacer muchas cosas no es lo mismo que hacer las importantes.", familia: C, atencion: 4, identificacion: 4, claridad: 5, curiosidad: 3, intensidad: 3, credibilidad: 5, relacion: 5 }
+  - { texto: "No necesitas más horas. Necesitas una sola cosa.", familia: F, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 5, intensidad: 3, credibilidad: 4, relacion: 5 }
+  - { texto: "Lo urgente siempre encuentra hueco. Lo importante, no.", familia: D, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 5, relacion: 4 }
+  - { texto: "La disciplina que nadie ve es la que lo cambia todo.", familia: F, atencion: 3, identificacion: 3, claridad: 3, curiosidad: 3, intensidad: 3, credibilidad: 4, relacion: 3 }
+  - { texto: "Tu agenda llena puede ser la razón por la que no avanzas.", familia: D, atencion: 4, identificacion: 4, claridad: 4, curiosidad: 4, intensidad: 3, credibilidad: 4, relacion: 4 }
+  - { texto: "Un hábito de domingo que cambia cómo usas la semana.", familia: C, atencion: 3, identificacion: 3, claridad: 4, curiosidad: 4, intensidad: 2, credibilidad: 5, relacion: 5 }
+  - { texto: "Moverse no es avanzar.", familia: D, atencion: 4, identificacion: 3, claridad: 4, curiosidad: 3, intensidad: 3, credibilidad: 5, relacion: 4 }
+elegido: 0
+motivo: "Frase del banco de temas, directa y con contradicción clara; el vídeo la convierte en algo accionable (una sola cosa cada domingo) para no quedarse en frase motivacional."
+
+storyboard:
+  gancho: { imagen: "Titular en cuatro líneas: «ocupado» y «progresando» en serif bronce.", camara: "Escala lenta.", sonido: "Música cálida", objetivo: "Contradicción que detiene el scroll." }
+  identificacion: { imagen: "Ticket «Tu semana»: llamadas, mensajes, recados marcados.", camara: "Subida suave.", sonido: "Ticks", objetivo: "Identificación con una semana real." }
+  problema: { imagen: "Tarjetas «Moverse» y «Avanzar»; el = se tacha: «Moverse no es avanzar».", camara: "Fija.", sonido: "Tick", objetivo: "Definir la diferencia." }
+  accion: { imagen: "Hoja «Esta semana» con casillas: una sola cosa, ahorrar, formarte, ordenar tus cuentas.", camara: "Acercamiento.", sonido: "Papel + ticks", objetivo: "Acción concreta." }
+  prioridad: { imagen: "«Primero lo urgente» se tacha; aparece «Primero lo importante».", camara: "Fija.", sonido: "Whoosh", objetivo: "Regla práctica." }
+  conclusion: { imagen: "Ventana con luz cálida; frase en serif.", camara: "Dolly in lento.", sonido: "Música abriéndose", objetivo: "Alivio y cierre." }
+  cta: { imagen: "Icono de mensaje + «Cuéntamela en comentarios» + firma Capital 4 Tune.", camara: "Fija.", sonido: "Pop suave", objetivo: "Comentarios." }
+
+prompts:
+  nota: "Pieza tipográfica y 2.5D hecha por código; no requiere modelos generativos."
+  lista: []
+
+publicacion:
+  portada: "Ocupado no es lo mismo que progresar"
+  descripcion: |
+    Hay semanas en las que no paras y aun así sientes que no has avanzado.
+    Estar ocupado es moverse. Progresar es acercarte a algo que tú has decidido.
+    Prueba esto: cada domingo, escribe una sola cosa que te acerque a tu objetivo (ahorrar, formarte, ordenar tus cuentas) y hazla antes que todo lo demás. Lo urgente siempre encuentra hueco. Lo importante, no.
+    Avanzar despacio, pero en la dirección correcta, también es avanzar.
+  cta: "¿Cuál sería tu una sola cosa esta semana? Te leo en comentarios 👇"
+  hashtags: ["#productividad", "#crecimientopersonal", "#habitos", "#finanzaspersonales", "#ahorro", "#mentalidad", "#Almería"]
+  tiktok: "Texto en portada: «¿Ocupado o avanzando?». Responder a los comentarios con la «una sola cosa» de cada persona."
+  instagram: "Comentario fijado con un ejemplo propio: «La mía esta semana: revisar mis suscripciones»."
+  youtube: "Título: «Estar ocupado no es progresar (el hábito del domingo)». #Shorts."
+
+fuentes: []
+
+qc: "1080×1920 · 30 fps · H.264 High · yuv420p · 7,0 Mbps · −16,6 LUFS · pico −3,6 dBTP · sin negros ni congelados (herramientas/qc.sh)."
+
+auditoria:
+  puntuaciones:
+    Gancho: 9
+    Identificación: 9
+    Utilidad: 8
+    Claridad: 9
+    Emoción: 8
+    Retención: 8
+    Credibilidad: 10
+    Narrativa: 9
+    Calidad visual: 8
+    Conversión: 8
+  problemas:
+    - "Tema de crecimiento personal: menos vinculado a la vivienda; aporta comunidad pero menos conversaciones comerciales."
+    - "Escenas tipográficas predominantes; menos variedad visual que los pilotos."
+    - "Mezcla de audio verificada con medidas, no a oído."
+  mejoras:
+    - "Corregido: «Primero lo importante» sincronizado con «hueco» para que no aparezca al final de la frase; etiqueta y conclusión configurables en las tarjetas de comparación."

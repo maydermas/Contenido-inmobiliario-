@@ -1,0 +1,92 @@
+# V005 · Estilo B — reflexión con una acción concreta (crecimiento personal)
+id: V005-ocupado-no-es-progresar
+titulo: "No confundas estar ocupado con estar progresando"
+estilo: B
+pilar: crecimiento-personal
+emocion: reflexion
+formato: reflexion-personal
+voz:
+  proveedor: elevenlabs
+  voice_id: E1MLwoobU29hxksWgI7o
+  modelo: eleven_multilingual_v2
+musica:
+  tono: calido
+  bpm: 70
+bloques:
+  - id: gancho
+    voz: "No confundas estar ocupado con estar progresando."
+    destacar: [ocupado, progresando]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: titular
+        lineas: ["No confundas", "estar *ocupado*", "con estar", "*progresando*"]
+
+  - id: identificacion
+    voz: "Hay semanas en las que no paras. Llamadas, mensajes, recados. Y al final, sientes que no has avanzado en nada."
+    destacar: [avanzado]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: recibo
+        titulo: Tu semana
+        simbolo: "✓"
+        lineas:
+          - { texto: Llamadas, en: llamadas }
+          - { texto: Mensajes, en: mensajes }
+          - { texto: Recados, en: recados }
+
+  - id: problema
+    voz: "Estar ocupado es moverse. Progresar es acercarte a algo que tú has decidido."
+    destacar: [moverse, decidido]
+    escena:
+      tipo: ComparisonScene
+      props:
+        variante: tarjetas
+        etiqueta: ""
+        izquierda: Moverse
+        derecha: Avanzar
+        signo: "="
+        tacharEn: progresar
+        conclusion: Moverse no es avanzar
+
+  - id: accion
+    voz: "Prueba esto. Cada domingo, escribe una sola cosa que te acerque a tu objetivo. Ahorrar, formarte, ordenar tus cuentas."
+    destacar: [sola, cosa]
+    escena:
+      tipo: DocumentReveal
+      props:
+        documento: Esta semana
+        lista:
+          - { texto: Una sola cosa, en: sola, destacada: true }
+          - { texto: Ahorrar, en: ahorrar }
+          - { texto: Formarte, en: formarte }
+          - { texto: Ordenar tus cuentas, en: cuentas }
+
+  - id: prioridad
+    voz: "Y hazla antes que todo lo demás. Lo urgente siempre encuentra hueco. Lo importante, no."
+    destacar: [antes, importante]
+    escena:
+      tipo: KineticTypography
+      props:
+        variante: contraste
+        lineas: ["Primero lo *urgente*", "Primero lo *importante*"]
+        cambiarEn: hueco
+
+  - id: conclusion
+    voz: "Avanzar despacio, pero en la dirección correcta, también es avanzar."
+    destacar: [dirección, correcta]
+    escena:
+      tipo: EmotionalEnding
+      props:
+        ilustracion: ventana-luz
+        frase: ["Despacio, pero en", "*la dirección correcta*."]
+
+  - id: cta
+    voz: "¿Cuál sería tu una sola cosa esta semana? Te leo en comentarios."
+    destacar: [comentarios]
+    escena:
+      tipo: CTAEnding
+      props:
+        accion: escribir
+        texto: Cuéntamela en comentarios

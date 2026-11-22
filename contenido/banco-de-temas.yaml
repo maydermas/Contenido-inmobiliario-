@@ -5,7 +5,7 @@
 # cuando quedan menos de 15 pendientes.
 temas:
   - { id: T01, tema: "Qué revisar antes de entregar una señal (arras)", pilar: realidad-inmobiliaria, formato: lista-de-comprobacion, estilo: A, verificar: ["Tipos de arras (art. 1454 Código Civil) y arras penitenciales", "Nota simple del Registro: qué muestra y dónde se pide"], estado: producido, video: V004-antes-de-entregar-una-senal, fecha: 2026-11-21 }
-  - { id: T02, tema: "No confundas estar ocupado con estar progresando", pilar: crecimiento-personal, formato: reflexion-personal, estilo: B, verificar: [], estado: pendiente }
+  - { id: T02, tema: "No confundas estar ocupado con estar progresando", pilar: crecimiento-personal, formato: reflexion-personal, estilo: B, verificar: [], estado: producido, video: V005-ocupado-no-es-progresar, fecha: 2026-11-22 }
   - { id: T03, tema: "Caso hipotético: vender tu vivienda por debajo de su valor por tener prisa", pilar: historias, formato: caso-hipotetico, estilo: A, verificar: ["Diferencia entre valoración de mercado y tasación oficial"], estado: pendiente }
   - { id: T04, tema: "Mito: «alquilar es tirar el dinero»", pilar: dinero-y-decisiones, formato: mito-vs-realidad, estilo: C, verificar: ["Gastos asociados a la propiedad: IBI, comunidad, seguro, mantenimiento (solo conceptos)"], estado: pendiente }
   - { id: T05, tema: "Un negocio puede facturar mucho y no ser rentable", pilar: negocios-y-oportunidades, formato: explicacion-visual, estilo: C, verificar: ["Diferencia entre facturación, margen y beneficio (concepto contable)"], estado: pendiente }

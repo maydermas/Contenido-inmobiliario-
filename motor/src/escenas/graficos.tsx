@@ -321,7 +321,7 @@ export const AnimatedNumber: React.FC<
 
 /* ───────── 8. ComparisonScene ───────── */
 export const ComparisonScene: React.FC<
-  EscenaProps<{ variante: "balanza" | "tarjetas" | "giro"; izquierda: string; derecha: string; inclinarHacia?: "izquierda" | "derecha"; signo?: string; tacharEn?: string; cambiarEn?: string }>
+  EscenaProps<{ variante: "balanza" | "tarjetas" | "giro"; izquierda: string; derecha: string; inclinarHacia?: "izquierda" | "derecha"; signo?: string; tacharEn?: string; cambiarEn?: string; etiqueta?: string; conclusion?: string }>
 > = ({ dur, marca, props }) => {
   const frame = useCurrentFrame();
 
@@ -348,7 +348,7 @@ export const ComparisonScene: React.FC<
       const e = entra(frame, 4 + i * 10, 22);
       return (
         <div style={{ ...panel(), width: 380, height: 420, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: e, transform: `translateY(${(1 - e) * 60}px)` }}>
-          <div style={{ fontFamily: F.sans, fontWeight: 700, fontSize: 30, letterSpacing: 3, color: C.bronceClaro, textTransform: "uppercase" }}>cada mes</div>
+          <div style={{ fontFamily: F.sans, fontWeight: 700, fontSize: 30, letterSpacing: 3, color: C.bronceClaro, textTransform: "uppercase" }}>{props.etiqueta ?? "cada mes"}</div>
           <div style={{ fontFamily: F.serif, fontStyle: "italic", fontWeight: 600, fontSize: 92, color: C.blanco, marginTop: 18 }}>{t}</div>
         </div>
       );
@@ -365,7 +365,7 @@ export const ComparisonScene: React.FC<
           {tarjeta(props.derecha, 1)}
         </div>
         <div style={{ position: "absolute", top: 880, left: 0, right: 0, textAlign: "center", fontFamily: F.serif, fontStyle: "italic", fontWeight: 600, fontSize: 64, color: C.bronceClaro, opacity: entra(frame, x + 6, 16) }}>
-          No es lo mismo
+          {props.conclusion ?? "No es lo mismo"}
         </div>
         <Sonido en={x} src="tick" volumen={0.45} />
       </AbsoluteFill>

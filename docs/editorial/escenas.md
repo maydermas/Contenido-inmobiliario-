@@ -13,7 +13,7 @@ se convierte en serif cursiva bronce.
 | `KineticTypography` | C | `variante`: `titular` (`lineas[]`), `recibo` (`titulo`, `lineas[{texto,en}]`, `simbolo`), `contraste` (`lineas[2]`, `cambiarEn`), `pregunta` (`lineas[]`, `respuesta`, `en`) | Tipografía animada. |
 | `FinancialChart` | C | `variante`: `pila` (`base`, `piezas[]`, `titulo`, `fuente`), `anillo` (`desde`, `hasta`, `etiqueta`, `en`, `fuente`), `barras` (`filas[{texto,valor,en,destacada}]`, `etiqueta`) | Gastos apilados, porcentaje, cascada de importes. |
 | `AnimatedNumber` | C | `variante`: `hucha` (`lineas[]`, `conclusion`), `calculadora` (`operacion[]`, `resultado{texto,valor,en}`, `nota`, `etiqueta`) | Cifras que cuentan. |
-| `ComparisonScene` | B/D | `variante`: `balanza` (`izquierda`, `derecha`, `inclinarHacia`), `tarjetas` (`signo`, `tacharEn`), `giro` (`cambiarEn`) | Comparar dos ideas. |
+| `ComparisonScene` | B/D | `variante`: `balanza` (`izquierda`, `derecha`, `inclinarHacia`), `tarjetas` (`signo`, `tacharEn`, `etiqueta`, `conclusion`), `giro` (`cambiarEn`) | Comparar dos ideas. |
 | `ArchitectureScene` | D | `modelo: local`, `camara` (`aproximacion`, `interior`, `cenital`), `titular[]`, `cartel`, `encenderEn`, `fichas[{texto,en}]`, `etiqueta` | Local comercial 3D (calle, interior, maqueta en corte). |
 | `MapScene` | B | `titulo`, `puntos[{nombre,x,y,en}]` | Mapa esquemático **ilustrativo** (sin pretensión cartográfica). |
 | `EmotionalEnding` | A | `ilustracion` (`ventana-luz`, `llaves`), `frase[]` | Conclusión emocional. |
