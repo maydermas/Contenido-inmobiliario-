@@ -80,7 +80,9 @@ Publicación directa autorizada por el propietario. **Solo Instagram.** Exactame
 3. Comprueba que la URL responde: `curl -sI "<video_url>"` → 200.
 4. `INSTAGRAM_POST_IG_USER_MEDIA` con `ig_user_id: "me"`, `video_url`, `media_type: "REELS"`, `share_to_feed: true`,
    `caption` (texto tal cual, con `#` normales) y `thumb_offset: 1500` → `creation_id`.
-5. `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` con `ig_user_id: "me"`, `creation_id`, `max_wait_seconds: 300`.
+5. `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` con `ig_user_id: "me"`, `creation_id`, `max_wait_seconds: 40`
+   (la llamada de Composio corta a los 60 s: valores mayores dan «timeout» con resultado desconocido).
+   Si hay timeout, **antes de reintentar** mira `INSTAGRAM_GET_IG_USER_MEDIA` (limit 3): si ya aparece, no publiques otra vez.
    Si falla por 9007/«not available», espera y reintenta el **publish** con el mismo `creation_id` (nunca crees otro
    contenedor si el anterior pudo publicarse: comprueba antes con `INSTAGRAM_GET_IG_USER_MEDIA`).
 6. `INSTAGRAM_GET_IG_MEDIA` (campos `id,permalink,caption`) → comprueba que el pie se ve bien (sin `%23`).
