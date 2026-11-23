@@ -7,3 +7,4 @@
 | 2026-11-21 | V004-antes-de-entregar-una-senal | Producido (cola: se publica tras P02 y P03) — «Qué revisar antes de entregar una señal» | 87 | 735 / ≈ 15.540 | Ilustración nueva «mesa-arras». |
 | 2026-11-22 | P02-sueldo-e-hipoteca | **Publicado** en Instagram: https://www.instagram.com/reel/DgCuax7lIUt/ | 86 | — | Cuenta verificada (capital4thunel). Primer intento de publicar dio timeout de 60 s; comprobado que no se había publicado y reintentado con el mismo contenedor. |
 | 2026-11-22 | V005-ocupado-no-es-progresar | Producido (cola) — «No confundas estar ocupado con estar progresando» | 86 | 584 / ≈ 12.850 | La cuenta de ElevenLabs tiene consumo externo (≈ 2.100 créditos ajenos al proyecto desde ayer). |
+| 2026-11-23 | P03-antes-de-alquilar-un-local | **Publicado** en Instagram: https://www.instagram.com/reel/DgFTHd5EXd-/ | 89 | — | Cuenta verificada (capital4thunel). Corregido CTA duplicado en el pie; publicar.mjs evita repetirlo. |

@@ -26,7 +26,10 @@ export function pie(carpeta) {
   const e = YAML.parse(fs.readFileSync(path.join(carpeta, "editorial.yaml"), "utf8"));
   const p = e.publicacion;
   const tags = [...new Set(p.hashtags)].slice(0, 12).join(" ");
-  let texto = `${p.portada}\n\n${p.descripcion.trim()}\n\n${p.cta}\n\n${tags}`;
+  // evita repetir la llamada a la acción si la descripción ya la incluye
+  const norm = (x) => x.toLowerCase().replace(/[^a-z0-9áéíóúñü]/g, "");
+  const desc = p.descripcion.trim().split("\n").filter((l) => !norm(p.cta).includes(norm(l)) || norm(l).length < 12).join("\n");
+  let texto = `${p.portada}\n\n${desc}\n\n${p.cta}\n\n${tags}`;
   if (texto.length > 2200) texto = texto.slice(0, 2190) + "…";
   return texto;
 }
